@@ -60,6 +60,16 @@ def main():
     run.add_argument("--limit-per-partition", type=int, help="Limit eligible curves for a pilot run")
     run.add_argument("--roman-photometry", type=Path, help="CSV of extracted, barycentric photometry")
 
+    tess = commands.add_parser("tess", help="Search TESS eclipses and test them in another sector")
+    tess.add_argument("discovery", type=int, help="Sector used to find the ephemeris")
+    tess.add_argument("validation", type=int, help="Later sector used for validation")
+    tess.add_argument("--cache", type=Path, default=Path("data/tess"))
+    tess.add_argument("--offset", type=int, default=0)
+    tess.add_argument("--limit", type=int, default=384)
+    tess.add_argument("--workers", type=int, default=8)
+    tess.add_argument("--prioritize-new-since", type=int, nargs="*", default=[])
+    tess.add_argument("--search", choices=("eclipses", "sparse"), default="eclipses")
+
     survey = commands.add_parser("hats", help="Plan and scan the public ZTF DR24 S3 archive")
     actions = survey.add_subparsers(dest="hats_command", required=True)
     plan = actions.add_parser("plan", help="Build a manifest of independently runnable shards")
@@ -99,6 +109,15 @@ def main():
                                      args.top, args.workers, args.limit_per_partition,
                                      args.roman_photometry)
                 output = trusted_experiment(args.experiment)(context)
+            case "tess":
+                from .tess import run_pair
+
+                output = run_pair(
+                    args.discovery, args.validation, args.cache, offset=args.offset,
+                    limit=args.limit, workers=args.workers,
+                    prioritize_new_since=tuple(args.prioritize_new_since),
+                    search=args.search,
+                )
             case "hats":
                 from .hats import create_plan, load_plan, merge_shards, scan_shard, write_json
 

@@ -1,0 +1,2671 @@
+{
+  "status": "ok",
+  "discovery_sector": 99,
+  "validation_sector": 100,
+  "common_targets": 5571,
+  "seed": 196,
+  "offset": 0,
+  "limit": 900,
+  "search": "sparse",
+  "prioritized_absence_in_sectors": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98
+  ],
+  "coverage": {
+    "no_discovery_eclipses": 553,
+    "crowded_discovery": 315,
+    "repeated": 21,
+    "failed_validation": 9,
+    "insufficient_validation": 1,
+    "insufficient_discovery": 1
+  },
+  "elapsed_seconds": 7.699986624997109,
+  "candidates": [
+    {
+      "tic": 450487472,
+      "RA_OBJ": 186.417057735712,
+      "DEC_OBJ": -63.6259592488893,
+      "TESSMAG": 8.98390007,
+      "crowdsap": 0.92066592,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0004/5048/7472/tess2026005125623-s0099-0000000450487472-0300-s_lc.fits",
+      "spacing_days": 3.081620485843346,
+      "epoch_btjd": 4046.6205732326193,
+      "duration_days": 0.022222222222222223,
+      "discovery_events": [
+        {
+          "time_btjd": 4046.620313249634,
+          "depth_fraction": 0.044528903852892765,
+          "robust_score": 94.63107827152949,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4049.7024333308686,
+          "depth_fraction": 0.044501640999851766,
+          "robust_score": 94.57322632890644,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4065.110261777868,
+          "depth_fraction": 0.044517741160868596,
+          "robust_score": 94.60739097007465,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4068.192387950151,
+          "depth_fraction": 0.044622843568507875,
+          "robust_score": 94.83041892856262,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4071.273120543123,
+          "depth_fraction": 0.04416270122548216,
+          "robust_score": 93.85399403322518,
+          "duration_days": 0.022222222222222223
+        }
+      ],
+      "discovery_predictions_covered": 5,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0004/5048/7472/tess2026033082000-s0100-0000000450487472-0302-s_lc.fits",
+      "validation_crowdsap": 0.90280551,
+      "validation_events": [
+        {
+          "time_btjd": 4074.355239106576,
+          "depth_fraction": 0.10203613673716849,
+          "robust_score": 241.04090400202767,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4077.435987912913,
+          "depth_fraction": 0.10264336494582293,
+          "robust_score": 242.47426094735093,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4080.518116924412,
+          "depth_fraction": 0.10253996149233235,
+          "robust_score": 242.23017798789888,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4083.6002384663443,
+          "depth_fraction": 0.1023092600996014,
+          "robust_score": 241.68560934162434,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4089.763095847268,
+          "depth_fraction": 0.1026713764766245,
+          "robust_score": 242.54038192403038,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4092.8452194989477,
+          "depth_fraction": 0.10573270805455293,
+          "robust_score": 249.7666286902741,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4095.9245548257945,
+          "depth_fraction": 0.10235889510097973,
+          "robust_score": 241.80277233396032,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4099.006658721193,
+          "depth_fraction": 0.10274434426444135,
+          "robust_score": 242.71262175736078,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "validation_predictions_covered": 8,
+      "status": "repeated"
+    },
+    {
+      "tic": 22391573,
+      "RA_OBJ": 184.236789735818,
+      "DEC_OBJ": -45.201907345254,
+      "TESSMAG": 9.2524004,
+      "crowdsap": 0.90176809,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0000/2239/1573/tess2026005125623-s0099-0000000022391573-0300-s_lc.fits",
+      "spacing_days": 2.9547418451571525,
+      "epoch_btjd": 4046.22975664476,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4046.2196791307297,
+          "depth_fraction": 0.10324354361135324,
+          "robust_score": 195.72369309921223,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4049.19769491515,
+          "depth_fraction": 0.0804747573505773,
+          "robust_score": 152.50592518176805,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4052.1284778190484,
+          "depth_fraction": 0.10317606145244951,
+          "robust_score": 195.59560422136573,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4055.109260965951,
+          "depth_fraction": 0.07731012079345456,
+          "robust_score": 146.4990820104918,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4063.94606368572,
+          "depth_fraction": 0.10319945297368882,
+          "robust_score": 195.64000401170054,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4066.9226801028026,
+          "depth_fraction": 0.07522302057839036,
+          "robust_score": 142.53752641055715,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4069.8534535343333,
+          "depth_fraction": 0.10274513427302612,
+          "robust_score": 194.7776550071943,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4072.8314494300002,
+          "depth_fraction": 0.07873760668001673,
+          "robust_score": 149.20861395674007,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 8,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0000/2239/1573/tess2026033082000-s0100-0000000022391573-0302-s_lc.fits",
+      "validation_crowdsap": 0.8945756,
+      "validation_events": [
+        {
+          "time_btjd": 4075.763630146754,
+          "depth_fraction": 0.10393330028072151,
+          "robust_score": 226.28187080875668,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4078.7416271212037,
+          "depth_fraction": 0.07817846073048174,
+          "robust_score": 170.13474080275182,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4081.670998718515,
+          "depth_fraction": 0.10375693713275758,
+          "robust_score": 225.89738832818512,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4084.6475875288293,
+          "depth_fraction": 0.07815265813447514,
+          "robust_score": 170.07848956074162,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4087.5811178857,
+          "depth_fraction": 0.10282374372187641,
+          "robust_score": 223.86296945093747,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4090.561876742766,
+          "depth_fraction": 0.0784680088572105,
+          "robust_score": 170.76597347972978,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4096.474736323568,
+          "depth_fraction": 0.08198548745984002,
+          "robust_score": 178.43429259349963,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "validation_predictions_covered": 7,
+      "status": "repeated"
+    },
+    {
+      "tic": 448860246,
+      "RA_OBJ": 213.799885990061,
+      "DEC_OBJ": -71.233664823508,
+      "TESSMAG": 8.6711998,
+      "crowdsap": 0.87695843,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0004/4886/0246/tess2026005125623-s0099-0000000448860246-0300-s_lc.fits",
+      "spacing_days": 5.401237908303322,
+      "epoch_btjd": 4049.2514796479063,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4049.2513527683877,
+          "depth_fraction": 0.06082257639430044,
+          "robust_score": 276.9850922110609,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4054.652982274124,
+          "depth_fraction": 0.06095307782222792,
+          "robust_score": 277.5790911532402,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4065.454906737162,
+          "depth_fraction": 0.06092651220304579,
+          "robust_score": 277.4581733215879,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4070.856580078385,
+          "depth_fraction": 0.06077916221683077,
+          "robust_score": 276.78748536566377,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 4,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0004/4886/0246/tess2026033082000-s0100-0000000448860246-0302-s_lc.fits",
+      "validation_crowdsap": 0.89484704,
+      "validation_events": [
+        {
+          "time_btjd": 4076.256882976062,
+          "depth_fraction": 0.05949417482638569,
+          "robust_score": 287.4077252469732,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4081.6585902683464,
+          "depth_fraction": 0.059611844022617544,
+          "robust_score": 287.97587314610115,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4092.4592337150207,
+          "depth_fraction": 0.059247014844706625,
+          "robust_score": 286.2143506949555,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4097.859551800806,
+          "depth_fraction": 0.05942085619575521,
+          "robust_score": 287.0537173392658,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "validation_predictions_covered": 4,
+      "status": "repeated"
+    },
+    {
+      "tic": 311838200,
+      "RA_OBJ": 181.861946777421,
+      "DEC_OBJ": -70.4893620420914,
+      "TESSMAG": 9.82050037,
+      "crowdsap": 0.90552717,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0003/1183/8200/tess2026005125623-s0099-0000000311838200-0300-s_lc.fits",
+      "spacing_days": 2.1339514862334554,
+      "epoch_btjd": 4046.9543694372924,
+      "duration_days": 0.022222222222222223,
+      "discovery_events": [
+        {
+          "time_btjd": 4046.9535893300495,
+          "depth_fraction": 0.04701319354478728,
+          "robust_score": 63.06138738361347,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4049.087021316749,
+          "depth_fraction": 0.04662378648373622,
+          "robust_score": 62.54029448006503,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4051.2260079509088,
+          "depth_fraction": 0.038521200983060444,
+          "robust_score": 51.69765646163677,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4053.3552707102185,
+          "depth_fraction": 0.04683168491987555,
+          "robust_score": 62.818497960604425,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4055.490088200071,
+          "depth_fraction": 0.046812053308984414,
+          "robust_score": 62.792227525001685,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4064.0252179140184,
+          "depth_fraction": 0.046994756058395204,
+          "robust_score": 63.036714889765385,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4066.158658249333,
+          "depth_fraction": 0.04424857589597231,
+          "robust_score": 59.36185858222545,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4068.2948744164937,
+          "depth_fraction": 0.046634191696783844,
+          "robust_score": 62.554218425523004,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4070.428310576026,
+          "depth_fraction": 0.04721238269682626,
+          "robust_score": 63.327936360181035,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4072.56174488306,
+          "depth_fraction": 0.047918841719643446,
+          "robust_score": 64.27329873353958,
+          "duration_days": 0.022222222222222223
+        }
+      ],
+      "discovery_predictions_covered": 10,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0003/1183/8200/tess2026033082000-s0100-0000000311838200-0302-s_lc.fits",
+      "validation_crowdsap": 0.88214731,
+      "validation_events": [
+        {
+          "time_btjd": 4074.6965687871602,
+          "depth_fraction": 0.04762822758485566,
+          "robust_score": 59.1747512040555,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4076.830017402208,
+          "depth_fraction": 0.047305221854892054,
+          "robust_score": 58.77444281073126,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4078.964851625498,
+          "depth_fraction": 0.04734833862381005,
+          "robust_score": 58.827878409204516,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4081.09829360234,
+          "depth_fraction": 0.04745567588190225,
+          "robust_score": 58.96090392963586,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4083.2331213466036,
+          "depth_fraction": 0.04748566380708086,
+          "robust_score": 58.998068651601415,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4085.3679459595605,
+          "depth_fraction": 0.04750375247310856,
+          "robust_score": 59.020486349379546,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4089.634830166986,
+          "depth_fraction": 0.04786954807837862,
+          "robust_score": 59.473825214443096,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4091.7682747638214,
+          "depth_fraction": 0.04712561290061856,
+          "robust_score": 58.551849323241214,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4096.037928865715,
+          "depth_fraction": 0.047559964898595375,
+          "robust_score": 59.090151694740506,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4098.171360664969,
+          "depth_fraction": 0.047385310788535584,
+          "robust_score": 58.87369885907909,
+          "duration_days": 0.022222222222222223
+        }
+      ],
+      "validation_predictions_covered": 10,
+      "status": "repeated"
+    },
+    {
+      "tic": 343142458,
+      "RA_OBJ": 205.710509439113,
+      "DEC_OBJ": -66.5785873676439,
+      "TESSMAG": 8.24610043,
+      "crowdsap": 0.95311391,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0003/4314/2458/tess2026005125623-s0099-0000000343142458-0300-s_lc.fits",
+      "spacing_days": 3.018308358132718,
+      "epoch_btjd": 4046.361634187234,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4046.3639568668777,
+          "depth_fraction": 0.006404378503348452,
+          "robust_score": 55.871419239848905,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4049.378005018096,
+          "depth_fraction": 0.006389694979389734,
+          "robust_score": 55.743442435409655,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4052.397607634811,
+          "depth_fraction": 0.006408575805789525,
+          "robust_score": 55.90800155858818,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4055.4158203488996,
+          "depth_fraction": 0.00637113305418097,
+          "robust_score": 55.5816627509731,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4064.4705019129988,
+          "depth_fraction": 0.00649107898304583,
+          "robust_score": 56.62707233553733,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4067.4942929698454,
+          "depth_fraction": 0.006385111556388927,
+          "robust_score": 55.70349481584056,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4070.505580228708,
+          "depth_fraction": 0.006403761023101043,
+          "robust_score": 55.866037483460595,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 7,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0003/4314/2458/tess2026033082000-s0100-0000000343142458-0302-s_lc.fits",
+      "validation_crowdsap": 0.94324934,
+      "validation_events": [
+        {
+          "time_btjd": 4076.5434480846316,
+          "depth_fraction": 0.006573009466161826,
+          "robust_score": 54.1622303159791,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4079.563086247246,
+          "depth_fraction": 0.006335958883679252,
+          "robust_score": 52.21093832114402,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4082.582718256615,
+          "depth_fraction": 0.006332793573876384,
+          "robust_score": 52.18488293830199,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4085.599567044824,
+          "depth_fraction": 0.006694918678530476,
+          "robust_score": 55.16573120469379,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4088.6192039090092,
+          "depth_fraction": 0.0065707747726223495,
+          "robust_score": 54.143835340658555,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4091.636070011958,
+          "depth_fraction": 0.006302857485625812,
+          "robust_score": 51.93846274920876,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4094.655704692398,
+          "depth_fraction": 0.0065235182913067,
+          "robust_score": 53.754841596245036,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4097.672553219041,
+          "depth_fraction": 0.006323958032843954,
+          "robust_score": 52.11215280490152,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "validation_predictions_covered": 8,
+      "status": "repeated"
+    },
+    {
+      "tic": 253453893,
+      "RA_OBJ": 196.927716179066,
+      "DEC_OBJ": -54.1579157771288,
+      "TESSMAG": 9.83570004,
+      "crowdsap": 0.91686845,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0002/5345/3893/tess2026005125623-s0099-0000000253453893-0300-s_lc.fits",
+      "spacing_days": 3.4621463344224046,
+      "epoch_btjd": 4048.578798618457,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4048.579938241639,
+          "depth_fraction": 0.011607191003950364,
+          "robust_score": 44.583746615160976,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4052.0399015727967,
+          "depth_fraction": 0.011382116493959621,
+          "robust_score": 43.71987731476498,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4055.502639931851,
+          "depth_fraction": 0.011404252456400886,
+          "robust_score": 43.80483841670635,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4065.8908978586674,
+          "depth_fraction": 0.011374266299760023,
+          "robust_score": 43.68974710689978,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4069.3494811842897,
+          "depth_fraction": 0.01199033596294851,
+          "robust_score": 46.054313707336775,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4072.8150059443774,
+          "depth_fraction": 0.011922611669046991,
+          "robust_score": 45.79437783812207,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 6,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0002/5345/3893/tess2026033082000-s0100-0000000253453893-0302-s_lc.fits",
+      "validation_crowdsap": 0.90465754,
+      "validation_events": [
+        {
+          "time_btjd": 4076.276375899841,
+          "depth_fraction": 0.011547755549848744,
+          "robust_score": 49.96735731079693,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4079.737743952698,
+          "depth_fraction": 0.011682450840446694,
+          "robust_score": 50.54984149262435,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4083.201879077699,
+          "depth_fraction": 0.011822596006019592,
+          "robust_score": 51.15589343210501,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4090.1232074078725,
+          "depth_fraction": 0.011692834516486283,
+          "robust_score": 50.59474526777069,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4097.047286846154,
+          "depth_fraction": 0.01183930032669394,
+          "robust_score": 51.22813057208063,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "validation_predictions_covered": 5,
+      "status": "repeated"
+    },
+    {
+      "tic": 314802266,
+      "RA_OBJ": 184.932193020182,
+      "DEC_OBJ": -71.4988604237183,
+      "TESSMAG": 11.18410015,
+      "crowdsap": 0.89219034,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0003/1480/2266/tess2026005125623-s0099-0000000314802266-0300-s_lc.fits",
+      "spacing_days": 2.5412442442571033,
+      "epoch_btjd": 4046.468291007006,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4046.4659458769115,
+          "depth_fraction": 0.06022257526376083,
+          "robust_score": 41.687366404880585,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4049.0091156813614,
+          "depth_fraction": 0.048963353444192725,
+          "robust_score": 33.92217556648668,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4051.5495067702723,
+          "depth_fraction": 0.05914726121048275,
+          "robust_score": 40.94575042388986,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4054.0968411054364,
+          "depth_fraction": 0.020711517615617403,
+          "robust_score": 14.437623236006239,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4066.800218320437,
+          "depth_fraction": 0.059488997454301806,
+          "robust_score": 41.18143697418403,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4069.339230159082,
+          "depth_fraction": 0.05017503543579904,
+          "robust_score": 34.757840948255414,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4071.8782391960394,
+          "depth_fraction": 0.05906314127030976,
+          "robust_score": 40.88773510105269,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 8,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0003/1480/2266/tess2026033082000-s0100-0000000314802266-0302-s_lc.fits",
+      "validation_crowdsap": 0.89627427,
+      "validation_events": [
+        {
+          "time_btjd": 4074.4186353846603,
+          "depth_fraction": 0.0510520834353321,
+          "robust_score": 21.330611443418377,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4076.959050308352,
+          "depth_fraction": 0.06206269663438241,
+          "robust_score": 25.89290654831773,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4079.502238947751,
+          "depth_fraction": 0.051663290853809385,
+          "robust_score": 21.58386787546138,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4082.0440342334036,
+          "depth_fraction": 0.06014523283386164,
+          "robust_score": 25.098397146090054,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4084.5830472365383,
+          "depth_fraction": 0.05006931133925674,
+          "robust_score": 20.92339558340224,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4089.668028219116,
+          "depth_fraction": 0.04955724239452475,
+          "robust_score": 20.711217605873863,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4092.208439595733,
+          "depth_fraction": 0.05942384653710153,
+          "robust_score": 24.799487620257835,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4094.7488449909383,
+          "depth_fraction": 0.04824423099963848,
+          "robust_score": 20.167165666960653,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4097.28646672889,
+          "depth_fraction": 0.06192209999100484,
+          "robust_score": 25.8346497222672,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "validation_predictions_covered": 9,
+      "status": "repeated"
+    },
+    {
+      "tic": 329089161,
+      "RA_OBJ": 191.38739869597,
+      "DEC_OBJ": -71.2213295978055,
+      "TESSMAG": 10.27000046,
+      "crowdsap": 0.79983938,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0003/2908/9161/tess2026005125623-s0099-0000000329089161-0300-s_lc.fits",
+      "spacing_days": 2.5370689501805357,
+      "epoch_btjd": 4046.476162457456,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4046.4754897134844,
+          "depth_fraction": 0.025783356511514526,
+          "robust_score": 23.810741211934257,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4049.0117173218573,
+          "depth_fraction": 0.025782891849066264,
+          "robust_score": 23.81031338556413,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4051.549333132396,
+          "depth_fraction": 0.02527743679708963,
+          "robust_score": 23.34492824209213,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4054.089725543714,
+          "depth_fraction": 0.020322040985442047,
+          "robust_score": 18.7823710339969,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4064.2402138433426,
+          "depth_fraction": 0.015628430486377687,
+          "robust_score": 14.460846128930337,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4066.772288199995,
+          "depth_fraction": 0.02619372985343854,
+          "robust_score": 24.188582240254256,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4069.3085268880714,
+          "depth_fraction": 0.025807824558929826,
+          "robust_score": 23.833269556862888,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4071.844763024005,
+          "depth_fraction": 0.024590375127831465,
+          "robust_score": 22.712333331285695,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 8,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0003/2908/9161/tess2026033082000-s0100-0000000329089161-0302-s_lc.fits",
+      "validation_crowdsap": 0.77253503,
+      "validation_events": [
+        {
+          "time_btjd": 4074.3851645616446,
+          "depth_fraction": 0.021143056648959633,
+          "robust_score": 19.488885847318823,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4076.9186407030834,
+          "depth_fraction": 0.024828528272390432,
+          "robust_score": 22.86639104866426,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4079.4562796012,
+          "depth_fraction": 0.026567530387197835,
+          "robust_score": 24.460078176946933,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4081.9939142135213,
+          "depth_fraction": 0.025979775407275807,
+          "robust_score": 23.921437344880136,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4084.5371004639105,
+          "depth_fraction": 0.018872752601262754,
+          "robust_score": 17.408293588520284,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4089.606816460192,
+          "depth_fraction": 0.025912578425707822,
+          "robust_score": 23.859855496489914,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4092.14306831354,
+          "depth_fraction": 0.026573090082861017,
+          "robust_score": 24.46517329174877,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4094.684870036818,
+          "depth_fraction": 0.02159762719918401,
+          "robust_score": 19.90547144466825,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4097.216943363599,
+          "depth_fraction": 0.026205736799731483,
+          "robust_score": 24.12851688755529,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "validation_predictions_covered": 9,
+      "status": "repeated"
+    },
+    {
+      "tic": 241333522,
+      "RA_OBJ": 204.122594871127,
+      "DEC_OBJ": -53.6823135089735,
+      "TESSMAG": 9.95629978,
+      "crowdsap": 0.87944275,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0002/4133/3522/tess2026005125623-s0099-0000000241333522-0300-s_lc.fits",
+      "spacing_days": 2.2748916514940936,
+      "epoch_btjd": 4047.346914895415,
+      "duration_days": 0.022222222222222223,
+      "discovery_events": [
+        {
+          "time_btjd": 4047.3503075281706,
+          "depth_fraction": 0.015124722208842367,
+          "robust_score": 16.423572634745142,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4049.6185237693467,
+          "depth_fraction": 0.0157845177522008,
+          "robust_score": 17.118160953200682,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4051.895071529031,
+          "depth_fraction": 0.01635865181144147,
+          "robust_score": 17.722570629486402,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4054.1716184501447,
+          "depth_fraction": 0.015394050014991612,
+          "robust_score": 16.707102812948992,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4063.270896188122,
+          "depth_fraction": 0.01588918119956806,
+          "robust_score": 17.228343582717308,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4065.548847092677,
+          "depth_fraction": 0.015612875959079453,
+          "robust_score": 16.93746803149041,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4067.822628287986,
+          "depth_fraction": 0.015389198079896582,
+          "robust_score": 16.70199502240261,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4070.095018504769,
+          "depth_fraction": 0.01507348028659039,
+          "robust_score": 16.36962858954856,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4072.368796934666,
+          "depth_fraction": 0.015546085043713687,
+          "robust_score": 16.867155053388327,
+          "duration_days": 0.022222222222222223
+        }
+      ],
+      "discovery_predictions_covered": 9,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0002/4133/3522/tess2026033082000-s0100-0000000241333522-0302-s_lc.fits",
+      "validation_crowdsap": 0.85422868,
+      "validation_events": [
+        {
+          "time_btjd": 4074.642578948393,
+          "depth_fraction": 0.01583874066528014,
+          "robust_score": 16.471882436810365,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4076.9163727442165,
+          "depth_fraction": 0.015648205753882927,
+          "robust_score": 16.279414897052092,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4079.194327097493,
+          "depth_fraction": 0.015804418998101477,
+          "robust_score": 16.43721263906129,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4081.466720907014,
+          "depth_fraction": 0.016034830951830448,
+          "robust_score": 16.669961700846933,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4083.7391109536256,
+          "depth_fraction": 0.015602730155043432,
+          "robust_score": 16.233478031395883,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4086.018443695481,
+          "depth_fraction": 0.015559710261069837,
+          "robust_score": 16.190021779242183,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4088.2922297668465,
+          "depth_fraction": 0.015404578428168447,
+          "robust_score": 16.033316417491044,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4090.564629219386,
+          "depth_fraction": 0.01599333179252227,
+          "robust_score": 16.62804160843179,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4092.8384097557623,
+          "depth_fraction": 0.01648799861735495,
+          "robust_score": 17.127725923906667,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4095.116351067637,
+          "depth_fraction": 0.015851974811768033,
+          "robust_score": 16.48525081952116,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4097.392897980664,
+          "depth_fraction": 0.01563430323512449,
+          "robust_score": 16.265371362655916,
+          "duration_days": 0.022222222222222223
+        }
+      ],
+      "validation_predictions_covered": 11,
+      "status": "repeated"
+    },
+    {
+      "tic": 389096669,
+      "RA_OBJ": 177.862565284228,
+      "DEC_OBJ": -50.8488371667083,
+      "TESSMAG": 9.99030018,
+      "crowdsap": 0.92298824,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0003/8909/6669/tess2026005125623-s0099-0000000389096669-0300-s_lc.fits",
+      "spacing_days": 2.0108561122965583,
+      "epoch_btjd": 4047.3930912650703,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4047.393503044079,
+          "depth_fraction": 0.004370694442496574,
+          "robust_score": 10.68375482318099,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4049.4019793079706,
+          "depth_fraction": 0.002889207628745609,
+          "robust_score": 7.105760508835769,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4051.4090636475416,
+          "depth_fraction": 0.004275788893371844,
+          "robust_score": 10.454544875433744,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4053.4342028247793,
+          "depth_fraction": 0.0024345159046915855,
+          "robust_score": 6.007617489036608,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4055.4371167269373,
+          "depth_fraction": 0.003960541833395441,
+          "robust_score": 9.693179888759468,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4063.480733243286,
+          "depth_fraction": 0.003732359399314659,
+          "robust_score": 9.142087942346954,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4065.4850383740363,
+          "depth_fraction": 0.00310847979454372,
+          "robust_score": 7.635332932456197,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4067.5032301256997,
+          "depth_fraction": 0.0046813744491923034,
+          "robust_score": 11.434089748352262,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4069.5158631404465,
+          "depth_fraction": 0.003044171433305945,
+          "robust_score": 7.480019399633693,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4071.5215489537304,
+          "depth_fraction": 0.0043480538589659445,
+          "robust_score": 10.629074701566578,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 10,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0003/8909/6669/tess2026033082000-s0100-0000000389096669-0302-s_lc.fits",
+      "validation_crowdsap": 0.89863104,
+      "validation_events": [
+        {
+          "time_btjd": 4075.5454403841395,
+          "depth_fraction": 0.007771980314815416,
+          "robust_score": 16.40346175962501,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4077.5594634720455,
+          "depth_fraction": 0.005114892784236016,
+          "robust_score": 10.847548475355685,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4079.5720922403752,
+          "depth_fraction": 0.007782263462609684,
+          "robust_score": 16.424963602065937,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4081.5763828893155,
+          "depth_fraction": 0.005122505921725813,
+          "robust_score": 10.863467383268107,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4083.590392454542,
+          "depth_fraction": 0.007530204804906439,
+          "robust_score": 15.897914331527536,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4085.6016209822947,
+          "depth_fraction": 0.006660608465192057,
+          "robust_score": 14.07960695543685,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4087.6128517486636,
+          "depth_fraction": 0.007484445271974657,
+          "robust_score": 15.80223212536318,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4089.6240862447207,
+          "depth_fraction": 0.004931018137900325,
+          "robust_score": 10.463070516515534,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4091.633924923259,
+          "depth_fraction": 0.00831443772484676,
+          "robust_score": 17.537728619808675,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4095.6591409811103,
+          "depth_fraction": 0.008711304562325134,
+          "robust_score": 18.367568701874486,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4097.667574759832,
+          "depth_fraction": 0.005820067952407915,
+          "robust_score": 12.322054692969367,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "validation_predictions_covered": 11,
+      "status": "repeated"
+    },
+    {
+      "tic": 446932730,
+      "RA_OBJ": 232.664707759851,
+      "DEC_OBJ": -66.1278900642421,
+      "TESSMAG": 9.98379993,
+      "crowdsap": 0.87713706,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0004/4693/2730/tess2026005125623-s0099-0000000446932730-0300-s_lc.fits",
+      "spacing_days": 2.4933651932389598,
+      "epoch_btjd": 4048.104016826286,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4048.1020160679464,
+          "depth_fraction": 0.09594230795735337,
+          "robust_score": 9.662566556562396,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4050.5965766377,
+          "depth_fraction": 0.1293296716609207,
+          "robust_score": 12.614208316590291,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4053.0897482419387,
+          "depth_fraction": 0.09612194236164395,
+          "robust_score": 9.67844730755398,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4055.584309548616,
+          "depth_fraction": 0.12948455742919984,
+          "robust_score": 12.627901140790062,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4063.0680370123237,
+          "depth_fraction": 0.03270394671128596,
+          "robust_score": 9.037365297197825,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4065.559849274674,
+          "depth_fraction": 0.13080571054686052,
+          "robust_score": 12.744698943338985,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4068.054438417587,
+          "depth_fraction": 0.09683604557086145,
+          "robust_score": 9.741578283452839,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4070.549026869179,
+          "depth_fraction": 0.13008669373983217,
+          "robust_score": 12.681133576135103,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4073.026948255593,
+          "depth_fraction": 0.010165598742585047,
+          "robust_score": 7.492134847595163,
+          "duration_days": 0.011111111111111112
+        }
+      ],
+      "discovery_predictions_covered": 9,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0004/4693/2730/tess2026033082000-s0100-0000000446932730-0302-s_lc.fits",
+      "validation_crowdsap": 0.89467442,
+      "validation_events": [
+        {
+          "time_btjd": 4075.5368336754577,
+          "depth_fraction": 0.12607335285606652,
+          "robust_score": 12.081066135524413,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4078.0314462989245,
+          "depth_fraction": 0.09456603769357208,
+          "robust_score": 9.340977372191228,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4080.524666402357,
+          "depth_fraction": 0.04508255609501699,
+          "robust_score": 12.209966362212535,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4083.019272909531,
+          "depth_fraction": 0.09364814708067204,
+          "robust_score": 9.261151409826452,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4085.511099122434,
+          "depth_fraction": 0.04497558683764069,
+          "robust_score": 12.18259815830933,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4088.0071001715746,
+          "depth_fraction": 0.09448262622817571,
+          "robust_score": 9.333723348232441,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4090.501726617788,
+          "depth_fraction": 0.12630743347478646,
+          "robust_score": 12.101423365893318,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4092.9741242065406,
+          "depth_fraction": 0.08847217885388758,
+          "robust_score": 8.811014281212449,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4095.488186700939,
+          "depth_fraction": 0.1250444893121898,
+          "robust_score": 11.991589218146965,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4097.984187946341,
+          "depth_fraction": 0.0938339706752016,
+          "robust_score": 9.277311883694399,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "validation_predictions_covered": 10,
+      "status": "repeated"
+    },
+    {
+      "tic": 179473571,
+      "RA_OBJ": 187.958273060701,
+      "DEC_OBJ": -62.2348721268848,
+      "TESSMAG": 9.60990047,
+      "crowdsap": 0.92655367,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0001/7947/3571/tess2026005125623-s0099-0000000179473571-0300-s_lc.fits",
+      "spacing_days": 4.341967516263349,
+      "epoch_btjd": 4048.8484452893463,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4048.852370540628,
+          "depth_fraction": 0.004463260197886365,
+          "robust_score": 19.789608205947275,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4053.1859556954823,
+          "depth_fraction": 0.004395819404414287,
+          "robust_score": 19.491253938739078,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4066.214517538495,
+          "depth_fraction": 0.0038816572168539256,
+          "robust_score": 17.216629415537895,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4070.5606125454115,
+          "depth_fraction": 0.004168321004530453,
+          "robust_score": 18.484813846712576,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 4,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0001/7947/3571/tess2026033082000-s0100-0000000179473571-0302-s_lc.fits",
+      "validation_crowdsap": 0.9001587,
+      "validation_events": [
+        {
+          "time_btjd": 4074.899760240203,
+          "depth_fraction": 0.0044932359778439325,
+          "robust_score": 16.4667554017365,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4079.237536658143,
+          "depth_fraction": 0.004139295300751647,
+          "robust_score": 15.173729372270536,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4083.582241301869,
+          "depth_fraction": 0.004365330875340226,
+          "robust_score": 15.999488886348999,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4087.91999579883,
+          "depth_fraction": 0.004372565857307647,
+          "robust_score": 16.025919925819924,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4092.261929057517,
+          "depth_fraction": 0.004018815433444874,
+          "robust_score": 14.733588934799304,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4096.605229542662,
+          "depth_fraction": 0.004025274664568004,
+          "robust_score": 14.757185979482488,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "validation_predictions_covered": 6,
+      "status": "repeated"
+    },
+    {
+      "tic": 54361956,
+      "RA_OBJ": 161.895556864316,
+      "DEC_OBJ": -30.6359420578309,
+      "TESSMAG": 10.8118,
+      "crowdsap": 0.95796919,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0000/5436/1956/tess2026005125623-s0099-0000000054361956-0300-s_lc.fits",
+      "spacing_days": 2.4679943188578712,
+      "epoch_btjd": 4047.947520844767,
+      "duration_days": 0.011111111111111112,
+      "discovery_events": [
+        {
+          "time_btjd": 4047.948422284738,
+          "depth_fraction": 0.031716180219743206,
+          "robust_score": 11.183524105832861,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4050.4138893937597,
+          "depth_fraction": 0.031553536029800267,
+          "robust_score": 11.12866632269926,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4052.8835178401973,
+          "depth_fraction": 0.03086960004846162,
+          "robust_score": 10.897983555889665,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4055.3517529759897,
+          "depth_fraction": 0.03147415218165284,
+          "robust_score": 11.101891176734869,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4065.2246659346447,
+          "depth_fraction": 0.030432842949896788,
+          "robust_score": 10.750671031516452,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4067.691488826425,
+          "depth_fraction": 0.03136438944904629,
+          "robust_score": 11.064869625681654,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4070.1596947240355,
+          "depth_fraction": 0.03117792722709023,
+          "robust_score": 11.001978328191937,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4072.626507532651,
+          "depth_fraction": 0.03344529370486615,
+          "robust_score": 11.766731736019583,
+          "duration_days": 0.011111111111111112
+        }
+      ],
+      "discovery_predictions_covered": 8,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0000/5436/1956/tess2026033082000-s0100-0000000054361956-0302-s_lc.fits",
+      "validation_crowdsap": 0.9640373,
+      "validation_events": [
+        {
+          "time_btjd": 4077.562884059562,
+          "depth_fraction": 0.031243238473023016,
+          "robust_score": 11.89436499908796,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4080.0310656911875,
+          "depth_fraction": 0.030034931701750978,
+          "robust_score": 11.45479996500792,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4082.4992394219394,
+          "depth_fraction": 0.03023082460150084,
+          "robust_score": 11.526063050841607,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4084.967406433632,
+          "depth_fraction": 0.0300811081760326,
+          "robust_score": 11.471598317854962,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4089.9023417045087,
+          "depth_fraction": 0.03098168358967346,
+          "robust_score": 11.799215005769364,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4092.3718767028954,
+          "depth_fraction": 0.02986187054701883,
+          "robust_score": 11.391842747365514,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4094.838624002326,
+          "depth_fraction": 0.03067595681664237,
+          "robust_score": 11.687995899329104,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4097.308140723171,
+          "depth_fraction": 0.03045812397525527,
+          "robust_score": 11.608751370849577,
+          "duration_days": 0.011111111111111112
+        }
+      ],
+      "validation_predictions_covered": 9,
+      "status": "repeated"
+    },
+    {
+      "tic": 328495876,
+      "RA_OBJ": 211.185444040541,
+      "DEC_OBJ": -62.3092877773071,
+      "TESSMAG": 9.60179996,
+      "crowdsap": 0.91438305,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0003/2849/5876/tess2026005125623-s0099-0000000328495876-0300-s_lc.fits",
+      "spacing_days": 2.792766267549393,
+      "epoch_btjd": 4047.3371987294245,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4047.3360239277654,
+          "depth_fraction": 0.0028303637014170362,
+          "robust_score": 12.455748319108856,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4050.1181303735098,
+          "depth_fraction": 0.002999623977482036,
+          "robust_score": 13.198151719977538,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4052.9419040913613,
+          "depth_fraction": 0.0018757230008895065,
+          "robust_score": 8.268537243031378,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4064.0870345941335,
+          "depth_fraction": 0.002443920584771145,
+          "robust_score": 10.76074526989944,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4066.8830514484357,
+          "depth_fraction": 0.002994545961425286,
+          "robust_score": 13.175878706617041,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4069.6776768140912,
+          "depth_fraction": 0.002344118038425054,
+          "robust_score": 10.322994891929842,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4072.477856685816,
+          "depth_fraction": 0.0026403827373561693,
+          "robust_score": 11.62246057376136,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 7,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0003/2849/5876/tess2026033082000-s0100-0000000328495876-0302-s_lc.fits",
+      "validation_crowdsap": 0.90240961,
+      "validation_events": [
+        {
+          "time_btjd": 4075.269711557606,
+          "depth_fraction": 0.002214718078826847,
+          "robust_score": 9.954263819245464,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4078.060189289531,
+          "depth_fraction": 0.002789364399554517,
+          "robust_score": 12.523941293343599,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4083.6522388508265,
+          "depth_fraction": 0.0026082376817966133,
+          "robust_score": 11.71398701400455,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4086.4579810899736,
+          "depth_fraction": 0.0019737129731561918,
+          "robust_score": 8.876548068102565,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4089.2512387769602,
+          "depth_fraction": 0.0026306316507333314,
+          "robust_score": 11.814127353299629,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4092.0333829920373,
+          "depth_fraction": 0.0023083017313022397,
+          "robust_score": 10.372746971465645,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4094.8321867033947,
+          "depth_fraction": 0.0027918599636205035,
+          "robust_score": 12.535100844069364,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4097.626816308768,
+          "depth_fraction": 0.002770136711957612,
+          "robust_score": 12.43795978799924,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "validation_predictions_covered": 8,
+      "status": "repeated"
+    },
+    {
+      "tic": 456425391,
+      "RA_OBJ": 231.858182006115,
+      "DEC_OBJ": -65.494801084952,
+      "TESSMAG": 9.35470009,
+      "crowdsap": 0.88952947,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0004/5642/5391/tess2026005125623-s0099-0000000456425391-0300-s_lc.fits",
+      "spacing_days": 8.845636333617644,
+      "epoch_btjd": 4054.7308021425542,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4054.730115602397,
+          "depth_fraction": 0.005670463464639052,
+          "robust_score": 29.8104243723172,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4063.5778115564817,
+          "depth_fraction": 0.0058609282009279996,
+          "robust_score": 30.810622804697605,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4072.421388269633,
+          "depth_fraction": 0.005985524235563063,
+          "robust_score": 31.464921132834036,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 3,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0004/5642/5391/tess2026033082000-s0100-0000000456425391-0302-s_lc.fits",
+      "validation_crowdsap": 0.8983354,
+      "validation_events": [
+        {
+          "time_btjd": 4081.2705877544845,
+          "depth_fraction": 0.005964384731857904,
+          "robust_score": 30.98350188319625,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4090.111467254111,
+          "depth_fraction": 0.0058607827305550385,
+          "robust_score": 30.445439279299347,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4098.963471885994,
+          "depth_fraction": 0.0055382505604260526,
+          "robust_score": 28.770350988361844,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "validation_predictions_covered": 3,
+      "status": "repeated"
+    },
+    {
+      "tic": 80845742,
+      "RA_OBJ": 166.11993695229,
+      "DEC_OBJ": -53.1085141325418,
+      "TESSMAG": 7.72609997,
+      "crowdsap": 0.97740614,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0000/8084/5742/tess2026005125623-s0099-0000000080845742-0300-s_lc.fits",
+      "spacing_days": 7.735485240888306,
+      "epoch_btjd": 4046.3796268770375,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4046.378628769149,
+          "depth_fraction": 0.0024181834949913127,
+          "robust_score": 20.66163512845108,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4054.116609279758,
+          "depth_fraction": 0.002279001037890676,
+          "robust_score": 19.470600534579994,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4069.58558354576,
+          "depth_fraction": 0.00233446177314936,
+          "robust_score": 19.94519809285457,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 3,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0000/8084/5742/tess2026033082000-s0100-0000000080845742-0302-s_lc.fits",
+      "validation_crowdsap": 0.97738928,
+      "validation_events": [
+        {
+          "time_btjd": 4077.326304537727,
+          "depth_fraction": 0.0022758997900121977,
+          "robust_score": 25.277075035980545,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4085.060030200676,
+          "depth_fraction": 0.002171009740340766,
+          "robust_score": 24.111089211592,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4092.797897895223,
+          "depth_fraction": 0.0023865336573340237,
+          "robust_score": 26.506910672426685,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "validation_predictions_covered": 3,
+      "status": "repeated"
+    },
+    {
+      "tic": 260433429,
+      "RA_OBJ": 225.19546610012,
+      "DEC_OBJ": -66.2742090840503,
+      "TESSMAG": 9.64770031,
+      "crowdsap": 0.75445753,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0002/6043/3429/tess2026005125623-s0099-0000000260433429-0300-s_lc.fits",
+      "spacing_days": 2.0023155510315744,
+      "epoch_btjd": 4046.668756930129,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4046.6674649070355,
+          "depth_fraction": 0.00274649224902521,
+          "robust_score": 6.429459104209937,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4048.6689520047316,
+          "depth_fraction": 0.002698895303882329,
+          "robust_score": 6.329007063550551,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4050.6801617019432,
+          "depth_fraction": 0.002570550594374412,
+          "robust_score": 6.058139092103972,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4054.6761907288,
+          "depth_fraction": 0.0028713701778137132,
+          "robust_score": 6.693010530514002,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4064.6809066673,
+          "depth_fraction": 0.002796044776945561,
+          "robust_score": 6.534038348413279,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4066.6963041140198,
+          "depth_fraction": 0.002609019556545737,
+          "robust_score": 6.139326776325262,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4068.6922552136602,
+          "depth_fraction": 0.002880544481028681,
+          "robust_score": 6.712372644548947,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4070.7062622649655,
+          "depth_fraction": 0.002785120437033342,
+          "robust_score": 6.5109828301705654,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4072.693878932647,
+          "depth_fraction": 0.002687808843118214,
+          "robust_score": 6.305609393718958,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 9,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0002/6043/3429/tess2026033082000-s0100-0000000260433429-0302-s_lc.fits",
+      "validation_crowdsap": 0.77690995,
+      "validation_events": [
+        {
+          "time_btjd": 4074.68567178657,
+          "depth_fraction": 0.002669595342524851,
+          "robust_score": 6.110640697939026,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4076.6941423050334,
+          "depth_fraction": 0.0025582326829400592,
+          "robust_score": 5.882965549699042,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4078.6984432083223,
+          "depth_fraction": 0.002711774453330023,
+          "robust_score": 6.196873689688711,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4082.697315626973,
+          "depth_fraction": 0.0031070850421939314,
+          "robust_score": 7.0050655670737685,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4084.704388435393,
+          "depth_fraction": 0.003345865042630139,
+          "robust_score": 7.493238821903984,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4088.7074348706815,
+          "depth_fraction": 0.0027262573782359315,
+          "robust_score": 6.226483274150823,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4090.703411516493,
+          "depth_fraction": 0.0034145436446124527,
+          "robust_score": 7.633648641007959,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4092.720219090638,
+          "depth_fraction": 0.002871959338811736,
+          "robust_score": 6.5243633319425,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4094.7120216231006,
+          "depth_fraction": 0.0029510812913207396,
+          "robust_score": 6.6861240364164125,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4096.727433766704,
+          "depth_fraction": 0.0027956729690409854,
+          "robust_score": 6.368399828457551,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "validation_predictions_covered": 11,
+      "status": "repeated"
+    },
+    {
+      "tic": 146937007,
+      "RA_OBJ": 161.24740639116,
+      "DEC_OBJ": -46.2935577901395,
+      "TESSMAG": 11.1875,
+      "crowdsap": 0.9268015,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0001/4693/7007/tess2026005125623-s0099-0000000146937007-0300-s_lc.fits",
+      "spacing_days": 3.0450142741673996,
+      "epoch_btjd": 4047.1836167525403,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4047.1849043359907,
+          "depth_fraction": 0.0036480482444174143,
+          "robust_score": 7.44273356937165,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4050.225383996799,
+          "depth_fraction": 0.0038920243358677078,
+          "robust_score": 7.936977491412807,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4053.2755794089476,
+          "depth_fraction": 0.0030103999431837225,
+          "robust_score": 6.150993073771372,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4065.452719887388,
+          "depth_fraction": 0.004272957392832106,
+          "robust_score": 8.708667237690957,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4068.5015055853237,
+          "depth_fraction": 0.0038076585904387086,
+          "robust_score": 7.766070347770621,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4071.541949880805,
+          "depth_fraction": 0.003592438326777095,
+          "robust_score": 7.330079646458318,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 6,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0001/4693/7007/tess2026033082000-s0100-0000000146937007-0302-s_lc.fits",
+      "validation_crowdsap": 0.94151789,
+      "validation_events": [
+        {
+          "time_btjd": 4074.590738579368,
+          "depth_fraction": 0.004179936992268747,
+          "robust_score": 9.225395854031442,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4077.631179988546,
+          "depth_fraction": 0.00392382097050924,
+          "robust_score": 8.66147614097391,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4083.7300837911794,
+          "depth_fraction": 0.004247261123651851,
+          "robust_score": 9.373631035066143,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4089.8192415455833,
+          "depth_fraction": 0.0038655348572398003,
+          "robust_score": 8.53314099019211,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4092.8707525416294,
+          "depth_fraction": 0.004217468436706326,
+          "robust_score": 9.308033094889995,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4095.902805551892,
+          "depth_fraction": 0.004130010135398099,
+          "robust_score": 9.115466226798683,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "validation_predictions_covered": 7,
+      "status": "repeated"
+    },
+    {
+      "tic": 382988300,
+      "RA_OBJ": 183.64095889533,
+      "DEC_OBJ": -62.3465167887446,
+      "TESSMAG": 9.96720028,
+      "crowdsap": 0.92159247,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0003/8298/8300/tess2026005125623-s0099-0000000382988300-0300-s_lc.fits",
+      "spacing_days": 2.7950736221916794,
+      "epoch_btjd": 4046.3303328526754,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4046.3357306597336,
+          "depth_fraction": 0.00182168341206051,
+          "robust_score": 5.255441165294891,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4049.1331161942653,
+          "depth_fraction": 0.00203985497067247,
+          "robust_score": 5.863730861262749,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4051.901330510426,
+          "depth_fraction": 0.0015629719717819013,
+          "robust_score": 4.5341211896220655,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4054.7112114395068,
+          "depth_fraction": 0.002586778542716415,
+          "robust_score": 7.38862244416602,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4063.1117038471475,
+          "depth_fraction": 0.0015615008653955126,
+          "robust_score": 4.530019560325351,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4065.907706797654,
+          "depth_fraction": 0.0019245656005501786,
+          "robust_score": 5.54228962324718,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4068.684259633089,
+          "depth_fraction": 0.0018138584616688037,
+          "robust_score": 5.233624221211906,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4071.480254138472,
+          "depth_fraction": 0.0018567739149967701,
+          "robust_score": 5.353277892952053,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 8,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0003/8298/8300/tess2026033082000-s0100-0000000382988300-0302-s_lc.fits",
+      "validation_crowdsap": 0.90114254,
+      "validation_events": [
+        {
+          "time_btjd": 4074.28596834471,
+          "depth_fraction": 0.0021090503721979004,
+          "robust_score": 5.617395904724636,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4077.076421317201,
+          "depth_fraction": 0.00207531213872654,
+          "robust_score": 5.530151808820404,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4079.876589519245,
+          "depth_fraction": 0.002296751751396422,
+          "robust_score": 6.102775115288623,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4082.658694534635,
+          "depth_fraction": 0.0018733661797344873,
+          "robust_score": 5.007937371341608,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4085.469961984468,
+          "depth_fraction": 0.0020876132629622825,
+          "robust_score": 5.561961431083644,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4088.250676960414,
+          "depth_fraction": 0.0019493702118912985,
+          "robust_score": 5.2044770946269425,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4091.049454028934,
+          "depth_fraction": 0.0022709578527075336,
+          "robust_score": 6.03607436840845,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4096.65114718259,
+          "depth_fraction": 0.0017585240387044902,
+          "robust_score": 4.710965724193172,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4099.448509619084,
+          "depth_fraction": 0.002582048314576436,
+          "robust_score": 6.840526863327057,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "validation_predictions_covered": 9,
+      "status": "repeated"
+    },
+    {
+      "tic": 390471207,
+      "RA_OBJ": 184.477599519619,
+      "DEC_OBJ": -56.4503531049097,
+      "TESSMAG": 9.85820007,
+      "crowdsap": 0.88697356,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0003/9047/1207/tess2026005125623-s0099-0000000390471207-0300-s_lc.fits",
+      "spacing_days": 5.264631066018618,
+      "epoch_btjd": 4046.3531665616124,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4046.3539594346867,
+          "depth_fraction": 0.0022252713920697473,
+          "robust_score": 9.626816083842838,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4051.6168065362867,
+          "depth_fraction": 0.0019173694009491822,
+          "robust_score": 8.298726527558738,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4072.676520109973,
+          "depth_fraction": 0.0017840282499691218,
+          "robust_score": 7.723579256198038,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 3,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0003/9047/1207/tess2026033082000-s0100-0000000390471207-0302-s_lc.fits",
+      "validation_crowdsap": 0.87679929,
+      "validation_events": [
+        {
+          "time_btjd": 4077.9282626459176,
+          "depth_fraction": 0.0018707905093171325,
+          "robust_score": 7.484521372119395,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4083.199429139781,
+          "depth_fraction": 0.001585869112929482,
+          "robust_score": 6.3457177026410845,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4088.4580853645007,
+          "depth_fraction": 0.0018126452762838481,
+          "robust_score": 7.252120416696288,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4098.996194436496,
+          "depth_fraction": 0.001689404298127908,
+          "robust_score": 6.759537971385193,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "validation_predictions_covered": 4,
+      "status": "repeated"
+    },
+    {
+      "tic": 401707534,
+      "RA_OBJ": 216.594143619289,
+      "DEC_OBJ": -73.3679081372012,
+      "TESSMAG": 9.10359955,
+      "crowdsap": 0.90134418,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0004/0170/7534/tess2026005125623-s0099-0000000401707534-0300-s_lc.fits",
+      "spacing_days": 7.630901895017392,
+      "epoch_btjd": 4047.8720621601915,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4047.8679120482593,
+          "depth_fraction": 0.0008668140036853112,
+          "robust_score": 4.409034453763603,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4055.5154480331457,
+          "depth_fraction": 0.0010638937648016905,
+          "robust_score": 5.392175178870031,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4063.121348330143,
+          "depth_fraction": 0.00089975662396472,
+          "robust_score": 4.573370108550998,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4070.768951599318,
+          "depth_fraction": 0.0009159150563938061,
+          "robust_score": 4.653977132250067,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 4,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0004/0170/7534/tess2026033082000-s0100-0000000401707534-0302-s_lc.fits",
+      "validation_crowdsap": 0.90412265,
+      "validation_events": [
+        {
+          "time_btjd": 4078.4138096125885,
+          "depth_fraction": 0.0009572711293184127,
+          "robust_score": 5.52493037467251,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4086.02672540758,
+          "depth_fraction": 0.0008658766474733091,
+          "robust_score": 5.007150640205146,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "validation_predictions_covered": 2,
+      "status": "repeated"
+    },
+    {
+      "tic": 404277706,
+      "RA_OBJ": 195.612199081221,
+      "DEC_OBJ": -52.0140772277133,
+      "TESSMAG": 11.07050037,
+      "crowdsap": 0.92906421,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0004/0427/7706/tess2026005125623-s0099-0000000404277706-0300-s_lc.fits",
+      "spacing_days": 4.479820116752944,
+      "epoch_btjd": 4053.4963398865834,
+      "duration_days": 0.011111111111111112,
+      "discovery_events": [
+        {
+          "time_btjd": 4053.495698226798,
+          "depth_fraction": 0.009956929809388337,
+          "robust_score": 11.30331561402289,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4066.938366875976,
+          "depth_fraction": 0.007549156129543766,
+          "robust_score": 8.55812875016149,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4071.413695374244,
+          "depth_fraction": 0.006304053807974608,
+          "robust_score": 7.138544108154925,
+          "duration_days": 0.011111111111111112
+        }
+      ],
+      "discovery_predictions_covered": 4,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0004/0427/7706/tess2026033082000-s0100-0000000404277706-0302-s_lc.fits",
+      "validation_crowdsap": 0.87813491,
+      "status": "failed_validation"
+    },
+    {
+      "tic": 331297805,
+      "RA_OBJ": 212.596634902336,
+      "DEC_OBJ": -60.1382681984373,
+      "TESSMAG": 12.43830013,
+      "crowdsap": 0.60300922,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0003/3129/7805/tess2026005125623-s0099-0000000331297805-0300-s_lc.fits",
+      "spacing_days": 4.982130397871334,
+      "epoch_btjd": 4050.533296938279,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4050.5347668262357,
+          "depth_fraction": 0.015523885366580767,
+          "robust_score": 11.42260512398626,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4055.512844093191,
+          "depth_fraction": 0.016515786379036584,
+          "robust_score": 12.151938431592226,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4065.481558308951,
+          "depth_fraction": 0.016971632568940825,
+          "robust_score": 12.487116846844874,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4070.4610617077124,
+          "depth_fraction": 0.01641379161665374,
+          "robust_score": 12.076942866033734,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 4,
+      "status": "insufficient_validation"
+    },
+    {
+      "tic": 329162367,
+      "RA_OBJ": 191.643662302536,
+      "DEC_OBJ": -68.0793898681498,
+      "TESSMAG": 10.21969986,
+      "crowdsap": 0.87983304,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0003/2916/2367/tess2026005125623-s0099-0000000329162367-0300-s_lc.fits",
+      "spacing_days": 5.805963897394152,
+      "epoch_btjd": 4053.2761873885393,
+      "duration_days": 0.022222222222222223,
+      "discovery_events": [
+        {
+          "time_btjd": 4053.2772802161635,
+          "depth_fraction": 0.016141657967801093,
+          "robust_score": 30.71349042616018,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4064.8848367004503,
+          "depth_fraction": 0.007383977839549805,
+          "robust_score": 14.016567899149088,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4070.6962647359733,
+          "depth_fraction": 0.004478869019009735,
+          "robust_score": 7.568361280903958,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 4,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0003/2916/2367/tess2026033082000-s0100-0000000329162367-0302-s_lc.fits",
+      "validation_crowdsap": 0.85352981,
+      "status": "failed_validation"
+    },
+    {
+      "tic": 343785405,
+      "RA_OBJ": 206.708340392851,
+      "DEC_OBJ": -67.4872414658464,
+      "TESSMAG": 10.35610008,
+      "crowdsap": 0.86675799,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0003/4378/5405/tess2026005125623-s0099-0000000343785405-0300-s_lc.fits",
+      "spacing_days": 7.2028723525423,
+      "epoch_btjd": 4046.8226645958007,
+      "duration_days": 0.002777777777777778,
+      "discovery_events": [
+        {
+          "time_btjd": 4046.820888404369,
+          "depth_fraction": 0.013038768737472145,
+          "robust_score": 4.277025490353239,
+          "duration_days": 0.002777777777777778
+        },
+        {
+          "time_btjd": 4054.028201235491,
+          "depth_fraction": 0.013278256680340217,
+          "robust_score": 4.347907605826546,
+          "duration_days": 0.002777777777777778
+        },
+        {
+          "time_btjd": 4068.4303935577127,
+          "depth_fraction": 0.013020268723106021,
+          "robust_score": 4.271549973970855,
+          "duration_days": 0.002777777777777778
+        }
+      ],
+      "discovery_predictions_covered": 3,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0003/4378/5405/tess2026033082000-s0100-0000000343785405-0302-s_lc.fits",
+      "validation_crowdsap": 0.84008974,
+      "status": "failed_validation"
+    },
+    {
+      "tic": 61644291,
+      "RA_OBJ": 176.840926487563,
+      "DEC_OBJ": -46.339953918574,
+      "TESSMAG": 8.21679974,
+      "crowdsap": 0.95801735,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0000/6164/4291/tess2026005125623-s0099-0000000061644291-0300-s_lc.fits",
+      "spacing_days": 4.418855220749992,
+      "epoch_btjd": 4052.358308663247,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4052.355261691836,
+          "depth_fraction": 0.00360045397840276,
+          "robust_score": 35.96886160064354,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4065.6270622111333,
+          "depth_fraction": 0.0004967077890352702,
+          "robust_score": 4.9931910708953655,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4070.0245886320185,
+          "depth_fraction": 0.003744139963123859,
+          "robust_score": 37.40286085538616,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 4,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0000/6164/4291/tess2026033082000-s0100-0000000061644291-0302-s_lc.fits",
+      "validation_crowdsap": 0.95432985,
+      "status": "failed_validation"
+    },
+    {
+      "tic": 260997529,
+      "RA_OBJ": 203.105493784257,
+      "DEC_OBJ": -53.3901993495351,
+      "TESSMAG": 11.59519958,
+      "crowdsap": 0.76110876,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0002/6099/7529/tess2026005125623-s0099-0000000260997529-0300-s_lc.fits",
+      "spacing_days": 6.4638695364558005,
+      "epoch_btjd": 4052.500630892362,
+      "duration_days": 0.005555555555555556,
+      "discovery_events": [
+        {
+          "time_btjd": 4052.5007307825185,
+          "depth_fraction": 0.010074458176967033,
+          "robust_score": 6.072174845465216,
+          "duration_days": 0.005555555555555556
+        },
+        {
+          "time_btjd": 4065.4280702948013,
+          "depth_fraction": 0.006630936816704791,
+          "robust_score": 4.762355931627378,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4071.8924392820454,
+          "depth_fraction": 0.014358663855255527,
+          "robust_score": 6.55966399185442,
+          "duration_days": 0.002777777777777778
+        }
+      ],
+      "discovery_predictions_covered": 3,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0002/6099/7529/tess2026033082000-s0100-0000000260997529-0302-s_lc.fits",
+      "validation_crowdsap": 0.78261679,
+      "status": "failed_validation"
+    },
+    {
+      "tic": 321471064,
+      "RA_OBJ": 175.527633752051,
+      "DEC_OBJ": -62.2672681099217,
+      "TESSMAG": 11.90799999,
+      "crowdsap": 0.68245614,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0003/2147/1064/tess2026005125623-s0099-0000000321471064-0300-s_lc.fits",
+      "spacing_days": 2.0527300894069893,
+      "epoch_btjd": 4047.035401573731,
+      "duration_days": 0.022222222222222223,
+      "discovery_events": [
+        {
+          "time_btjd": 4047.0347069678733,
+          "depth_fraction": 0.03696938139243233,
+          "robust_score": 6.783803975899634,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4049.088989835987,
+          "depth_fraction": 0.09175374114525381,
+          "robust_score": 6.898311216107709,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4051.1391037390536,
+          "depth_fraction": 0.08903080195047153,
+          "robust_score": 6.698011233761279,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4053.194771820014,
+          "depth_fraction": 0.08767777322931725,
+          "robust_score": 6.5984821552270505,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4055.2476605517772,
+          "depth_fraction": 0.03930420034976656,
+          "robust_score": 7.202817067109342,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4063.457842916006,
+          "depth_fraction": 0.037240137155320596,
+          "robust_score": 6.832394556687185,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4065.507960505059,
+          "depth_fraction": 0.037277909843837165,
+          "robust_score": 6.839173348219998,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4067.562242323094,
+          "depth_fraction": 0.08936603409566679,
+          "robust_score": 6.722670981174382,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4069.615132696544,
+          "depth_fraction": 0.08909692928256341,
+          "robust_score": 6.702875574278321,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4071.6694097463296,
+          "depth_fraction": 0.08545293879632077,
+          "robust_score": 6.4348228643744125,
+          "duration_days": 0.022222222222222223
+        }
+      ],
+      "discovery_predictions_covered": 11,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0003/2147/1064/tess2026033082000-s0100-0000000321471064-0302-s_lc.fits",
+      "validation_crowdsap": 0.66312075,
+      "status": "failed_validation"
+    },
+    {
+      "tic": 105759569,
+      "RA_OBJ": 156.387921812877,
+      "DEC_OBJ": -37.4076015086084,
+      "TESSMAG": 12.42599964,
+      "crowdsap": 0.68786877,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0001/0575/9569/tess2026005125623-s0099-0000000105759569-0300-s_lc.fits",
+      "spacing_days": 5.654136111294559,
+      "epoch_btjd": 4048.2623988407004,
+      "duration_days": 0.044444444444444446,
+      "discovery_events": [
+        {
+          "time_btjd": 4048.2580573664723,
+          "depth_fraction": 0.004557972207775422,
+          "robust_score": 4.225580941048085,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4053.9223235843024,
+          "depth_fraction": 0.005277698988709967,
+          "robust_score": 4.887717971214607,
+          "duration_days": 0.044444444444444446
+        },
+        {
+          "time_btjd": 4070.877496127805,
+          "depth_fraction": 0.005394805078159799,
+          "robust_score": 4.995453684733622,
+          "duration_days": 0.044444444444444446
+        }
+      ],
+      "discovery_predictions_covered": 4,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0001/0575/9569/tess2026033082000-s0100-0000000105759569-0302-s_lc.fits",
+      "validation_crowdsap": 0.79765284,
+      "status": "failed_validation"
+    },
+    {
+      "tic": 450608427,
+      "RA_OBJ": 186.691981252454,
+      "DEC_OBJ": -60.891855881601,
+      "TESSMAG": 8.93229961,
+      "crowdsap": 0.89646769,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0004/5060/8427/tess2026005125623-s0099-0000000450608427-0300-s_lc.fits",
+      "spacing_days": 4.982744707401414,
+      "epoch_btjd": 4048.0115801899965,
+      "duration_days": 0.022222222222222223,
+      "discovery_events": [
+        {
+          "time_btjd": 4048.0107530916525,
+          "depth_fraction": 0.0026671563224828637,
+          "robust_score": 5.4576327464857775,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4067.946694511315,
+          "depth_fraction": 0.003819852276942981,
+          "robust_score": 9.305777220558857,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4072.921995333633,
+          "depth_fraction": 0.002431258862632249,
+          "robust_score": 4.974639710652559,
+          "duration_days": 0.022222222222222223
+        }
+      ],
+      "discovery_predictions_covered": 4,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0004/5060/8427/tess2026033082000-s0100-0000000450608427-0302-s_lc.fits",
+      "validation_crowdsap": 0.88714802,
+      "status": "failed_validation"
+    },
+    {
+      "tic": 67801942,
+      "RA_OBJ": 185.620195538914,
+      "DEC_OBJ": -57.6533834102397,
+      "TESSMAG": 12.05430031,
+      "crowdsap": 0.82939106,
+      "discovery_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0000/6780/1942/tess2026005125623-s0099-0000000067801942-0300-s_lc.fits",
+      "spacing_days": 8.821006848066979,
+      "epoch_btjd": 4046.4326379727304,
+      "duration_days": 0.011111111111111112,
+      "discovery_events": [
+        {
+          "time_btjd": 4046.430259441922,
+          "depth_fraction": 0.0548009721267837,
+          "robust_score": 33.38232223290989,
+          "duration_days": 0.011111111111111112
+        },
+        {
+          "time_btjd": 4055.2572126170066,
+          "depth_fraction": 0.005495371845183228,
+          "robust_score": 4.232892717523395,
+          "duration_days": 0.022222222222222223
+        },
+        {
+          "time_btjd": 4072.8944692515292,
+          "depth_fraction": 0.00900879432399293,
+          "robust_score": 5.460020606371609,
+          "duration_days": 0.011111111111111112
+        }
+      ],
+      "discovery_predictions_covered": 4,
+      "validation_source": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0000/6780/1942/tess2026033082000-s0100-0000000067801942-0302-s_lc.fits",
+      "validation_crowdsap": 0.76095217,
+      "status": "failed_validation"
+    }
+  ]
+}

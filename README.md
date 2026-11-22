@@ -1,6 +1,6 @@
 # Sky
 
-Run astronomy experiments across ZTF, Gaia, and Roman. Sky provides a local CLI, a Python experiment interface, and a local HTTP API.
+Run astronomy experiments across ZTF, Gaia, Roman, and TESS. Sky provides a local CLI, a Python experiment interface, and a local HTTP API.
 
 The [ZTF experiments](ztf/README.md) include the J1539 orbital-decay reproduction and a pilot search for eclipses around fast-moving stars. [Saved reports](output/ztf/) include ranked candidates, survey coverage, and timing fits.
 
@@ -56,6 +56,37 @@ centers and do not establish that a source falls on the detector.
 ```sh
 sky cone 8.1 -43.7 --radius-arcsec 360 --surveys roman-sim --roman-program hlwas
 ```
+
+## TESS repeatability search
+
+```sh
+sky tess 107 108 --cache data/tess --limit 1000 --workers 10 \
+  --prioritize-new-since {1..106} --search sparse > tess-107-108.json
+```
+
+Sky intersects the two public SPOC two-minute sector manifests and picks a
+reproducible target order. The optional prior-sector list puts targets absent
+from those short-cadence manifests first. Use `--offset` and `--limit` to
+divide a target list across runs with the same prior-sector list.
+
+The default search uses an accelerated periodogram and a box search on
+six-minute averages for 0.12–1.5 day recurrence. It downloads holdout
+photometry only for targets with enough discoveries to make a prediction.
+The sparse search instead uses native two-minute observations, tests dip
+widths of 4–64 minutes, and looks for recurrence every 2–12 days. It needs
+at least three events to estimate an ephemeris in the first sector and two
+events at predicted times in the second. A period is penalized when it
+predicts events in adequately sampled windows with no corresponding dip.
+Both searches report the input product URLs, coverage counts, and timings.
+
+The output is a shortlist for pixel localization and catalogue and literature
+checks. Run `python tess_catalogs.py tess-107-108.json` to match
+repeaters against five published TIC tables, including the IJspeert et al.
+eclipsing-binary table. For box-shaped repeaters, `sky.tess_pixels.localize` estimates the
+position of the variable component from public target pixel files using the
+ephemeris and paired in-event and out-of-event flux measurements.
+
+The [HD 96135 recovery](output/tess/80845742/report.md) includes the scan, independent-sector predictions, archival measurements, pixel checks, and prior-publication match.
 
 ## Local HTTP API
 

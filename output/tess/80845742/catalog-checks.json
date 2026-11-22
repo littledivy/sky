@@ -1,0 +1,434 @@
+{
+  "checked_date": "2026-11-22",
+  "tic": 80845742,
+  "gaia_dr3_id": "5347442439131706624",
+  "aliases": [
+    "HD 96135",
+    "HIP 54129",
+    "TYC 8615-1089-1",
+    "2MASS J11042879-5306306",
+    "CD-52 4139",
+    "Renson 27690"
+  ],
+  "catalog_matches": [
+    {
+      "name": "TESS Ten Thousand, new systems",
+      "url": "https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J%2FApJS%2F279%2F50%2Ftable3",
+      "method": "Exact TIC identifier check",
+      "result": "No matching row",
+      "snapshot_lines": 7971
+    },
+    {
+      "name": "TESS Ten Thousand, previously published systems",
+      "url": "https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J%2FApJS%2F279%2F50%2Ftable4",
+      "method": "Exact TIC identifier check",
+      "result": "No matching row",
+      "snapshot_lines": 2100
+    },
+    {
+      "name": "TESS Eclipsing Binary Catalog, published table",
+      "url": "https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J%2FApJS%2F258%2F16%2Ftess-ebs",
+      "method": "Exact TIC identifier check",
+      "result": "No matching row",
+      "snapshot_lines": 4619
+    },
+    {
+      "name": "TESS prime mission variability catalog",
+      "url": "https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J%2FApJS%2F268%2F4",
+      "method": "Exact TIC identifier check",
+      "result": "No matching row",
+      "snapshot_lines": 84097
+    },
+    {
+      "name": "Short-period variables in TESS full-frame light curves",
+      "url": "https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J%2FAJ%2F168%2F83",
+      "method": "Exact TIC identifier check",
+      "result": "No matching row",
+      "snapshot_lines": 14191
+    },
+    {
+      "name": "TESS Project Candidates",
+      "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+tid%2Ctoi%2Ctfopwg_disp%2Cpl_orbper+from+toi&format=csv",
+      "method": "Exact TIC identifier check",
+      "result": "No matching row",
+      "snapshot_lines": 8176
+    },
+    {
+      "name": "ExoFOP Community Objects of Interest",
+      "url": "https://exofop.ipac.caltech.edu/tess/view_ctoi.php",
+      "method": "Exact TIC identifier check",
+      "result": "No matching row",
+      "snapshot_lines": 5140
+    },
+    {
+      "name": "TESS first-year weirddetector results",
+      "url": "https://academic.oup.com/mnras/article/499/3/4011/5911118",
+      "method": "Exact TIC identifier check",
+      "result": "No matching row",
+      "snapshot_lines": 378
+    },
+    {
+      "name": "IJspeert et al. (2024), TESS OBAF eclipsing systems",
+      "url": "https://doi.org/10.1051/0004-6361/202450507",
+      "table": "J/A+A/691/A242/obaf-eb1",
+      "result": "Published eclipsing signal at the recovered period",
+      "period_days": 7.734348266900978
+    }
+  ],
+  "position_queries": [
+    {
+      "check": "simbad",
+      "request": "https://simbad.idia.ac.za/simbad/sim-tap/sync?request=doQuery&lang=adql&format=csv&query=SELECT+TOP+30+b.main_id%2Cb.otype%2Cb.ra%2Cb.dec+FROM+basic+b+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cb.ra%2Cb.dec%29%2CCIRCLE%28%27ICRS%27%2C166.11993695229%2C-53.1085141325418%2C.015%29%29",
+      "status": 200,
+      "body": "main_id,otype,ra,dec\n\"HD  96135\",\"SB*\",166.11993734758,-53.108514404050005"
+    },
+    {
+      "check": "vsx",
+      "request": "https://vsx.aavso.org/index.php?view=api.list&ra=166.11993695229&dec=-53.1085141325418&radius=0.03&format=json",
+      "status": 200,
+      "body": "{\"VSXObjects\":{\"VSXObject\":[{\"Name\":\"Gaia DR3 5347442675334956160\",\"RA2000\":\"166.09548\",\"Declination2000\":\"-53.09401\",\"ProperMotionRA\":\"-4.9440\",\"ProperMotionDec\":\"1.1950\",\"VariabilityType\":\"E\",\"Period\":\"0.73642\",\"MaxMag\":\"18.84 G\",\"MinMag\":\"19.87 G\",\"Discoverer\":\"Gaia collaboration\",\"Category\":\"Variable\",\"OID\":\"4659313\",\"Constellation\":\"Vel\"},{\"Name\":\"Gaia DR3 5347442439131695360\",\"RA2000\":\"166.11420\",\"Declination2000\":\"-53.11289\",\"ProperMotionRA\":\"-0.1590\",\"ProperMotionDec\":\"-0.4380\",\"VariabilityType\":\"ROT\",\"MaxMag\":\"15.19 G\",\"MinMag\":\"15.24 G\",\"SpectralType\":\"G\",\"Discoverer\":\"Gaia collaboration\",\"Category\":\"Variable\",\"OID\":\"4659571\",\"Constellation\":\"Vel\"}]}}"
+    },
+    {
+      "check": "II/366",
+      "request": "https://vizier.idia.ac.za/viz-bin/asu-tsv?-source=II%2F366&-c=166.11993695229+-53.1085141325418&-c.rs=25",
+      "status": 200,
+      "body": ""
+    },
+    {
+      "check": "I/358/varisum",
+      "request": "https://vizier.idia.ac.za/viz-bin/asu-tsv?-source=I%2F358%2Fvarisum&-c=166.11993695229+-53.1085141325418&-c.rs=25",
+      "status": 200,
+      "body": "Source\tRA_ICRS\tDE_ICRS\tTimeG\tDurG\tGmagmean\tTimeBP\tDurBP\tBPmagmean\tTimeRP\tDurRP\tRPmagmean\tVCR\tVRRLyr\tVCep\tVPN\tVST\tVLPV\tVEB\tVRM\tVMSO\tVAGN\tVmicro\tVCC\n \tdeg\tdeg\td\td\tmag\td\td\tmag\td\td\tmag\t \t \t \t \t \t \t \t \t \t \t \t\n-------------------\t---------------\t---------------\t-----------\t-----------\t---------\t-----------\t-----------\t---------\t-----------\t-----------\t---------\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\t-\n5347442439131695360\t166.11419619123\t-53.11289116389\t2223.332493\t 993.715330\t15.214728\t2233.984588\t 993.567300\t15.635939\t2215.064128\t 993.567300\t14.598547\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0\t0"
+    }
+  ],
+  "live_tess_eb": {
+    "url": "https://tessebs.villanova.edu/search_results?tic=80845742",
+    "result": "No rows in results table"
+  },
+  "simbad_bibliography": {
+    "url": "https://simbad.idia.ac.za/simbad/sim-id?Ident=HD%2096135",
+    "bibcodes": [
+      "2022yCat.1357....0G",
+      "2020yCat.1350....0G",
+      "2020yCat.1350....0G",
+      "2020yCat.1350....0G",
+      "1978MSS...C02....0H",
+      "2000A%26A...355L..27H",
+      "2000A%26A...355L..27H",
+      "2020yCat.1350....0G",
+      "2003yCat.2246....0C",
+      "2003yCat.2246....0C",
+      "2003yCat.2246....0C",
+      "2023A%26A...674A..34G",
+      "2022yCat.1357....0G",
+      "2021ApJS..254...42B",
+      "2019A%26A...623A..72K",
+      "2019MNRAS.490.3158C",
+      "2014ASPC..485..223B",
+      "2012A%26A...546A..61D",
+      "2012MNRAS.427..343M",
+      "2009A%26A...498..961R",
+      "2007A%26A...474..653V",
+      "1997A%26A...323L..49P",
+      "1993yCat.3135....0C",
+      "1991A%26AS...89..429R",
+      "1978MSS...C02....0H"
+    ],
+    "finding": "Earlier spectroscopy, astrometry, stellar parameters, identifications and spectral classification."
+  },
+  "gaia_sb1": {
+    "url": "https://vizier.idia.ac.za/viz-bin/asu-tsv?-source=I%2F357%2Ftbosb1&-c=166.119937+-53.108514&-c.rs=4&-out.all=1",
+    "period_days": 7.736532857754004,
+    "period_standard_error_days": 0.00016595736,
+    "semi_amplitude_km_s": 16.801566649227603,
+    "semi_amplitude_standard_error_km_s": 0.09432638,
+    "type": "SB1"
+  },
+  "gaia_neighborhood": {
+    "status": "ok",
+    "radius_arcsec": 90,
+    "rows": [
+      {
+        "source_id": "5347442439131706624",
+        "ra": 166.1196534776725,
+        "dec": -53.10848777560581,
+        "ref_epoch": 2016.0,
+        "pmra": -38.34168682877163,
+        "pmdec": 5.991476703425633,
+        "parallax": 3.195267516082435,
+        "phot_g_mean_mag": 7.9038796,
+        "bp_rp": 0.32950974,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.0001722073863419843
+      },
+      {
+        "source_id": "5347442439131891456",
+        "ra": 166.11518894404668,
+        "dec": -53.10804137102436,
+        "ref_epoch": 2016.0,
+        "pmra": -6.852303339644529,
+        "pmdec": 1.5241190608369157,
+        "parallax": -0.29018096682450706,
+        "phot_g_mean_mag": 19.067917,
+        "bp_rp": 0.9685669,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.002889199818326714
+      },
+      {
+        "source_id": "5347442473485975296",
+        "ra": 166.11657744506877,
+        "dec": -53.10609276952937,
+        "ref_epoch": 2016.0,
+        "pmra": -8.3876768051041,
+        "pmdec": 4.48854170066843,
+        "parallax": -0.26506277742655,
+        "phot_g_mean_mag": 20.261385,
+        "bp_rp": 0.94345665,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.003151166186899914
+      },
+      {
+        "source_id": "5347442473491687040",
+        "ra": 166.12521615299093,
+        "dec": -53.10661121473034,
+        "ref_epoch": 2016.0,
+        "pmra": -6.183365944688558,
+        "pmdec": 1.3089499458845455,
+        "parallax": -0.5321626021970145,
+        "phot_g_mean_mag": 20.487394,
+        "bp_rp": 1.0400162,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.0036965013654495244
+      },
+      {
+        "source_id": "5347442439125695872",
+        "ra": 166.11929049579177,
+        "dec": -53.112317263192,
+        "ref_epoch": 2016.0,
+        "pmra": -8.677479945240675,
+        "pmdec": 1.514684168000172,
+        "parallax": 0.2407218662282973,
+        "phot_g_mean_mag": 18.686214,
+        "bp_rp": 1.1153812,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.0038230115299729564
+      },
+      {
+        "source_id": "5347442439131891328",
+        "ra": 166.11341679938536,
+        "dec": -53.107759098102356,
+        "ref_epoch": 2016.0,
+        "pmra": -1.0340337642281252,
+        "pmdec": 0.7476328321055861,
+        "parallax": 0.21853219668633894,
+        "phot_g_mean_mag": 17.222847,
+        "bp_rp": 1.1606293,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.003986252739947431
+      },
+      {
+        "source_id": "5347442439125696000",
+        "ra": 166.11885203010473,
+        "dec": -53.1125840618341,
+        "ref_epoch": 2016.0,
+        "pmra": -6.425899173846459,
+        "pmdec": 3.0992602721766063,
+        "parallax": 0.7372001598058943,
+        "phot_g_mean_mag": 19.508772,
+        "bp_rp": null,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.004121840185290916
+      },
+      {
+        "source_id": "5347442473491708928",
+        "ra": 166.12639067325898,
+        "dec": -53.106459305337154,
+        "ref_epoch": 2016.0,
+        "pmra": -5.49486337914733,
+        "pmdec": 2.8060348777474657,
+        "parallax": 1.2385823486759167,
+        "phot_g_mean_mag": 20.655233,
+        "bp_rp": 1.5819931,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.004385375446742518
+      },
+      {
+        "source_id": "5347442473486862592",
+        "ra": 166.12824043954788,
+        "dec": -53.106773215278864,
+        "ref_epoch": 2016.0,
+        "pmra": 6.27321087737078,
+        "pmdec": -2.7888571466327194,
+        "parallax": -0.09607432226361429,
+        "phot_g_mean_mag": 20.46974,
+        "bp_rp": 1.9455147,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.005279889975819838
+      },
+      {
+        "source_id": "5347442473486862976",
+        "ra": 166.1286743249867,
+        "dec": -53.10752954446359,
+        "ref_epoch": 2016.0,
+        "pmra": -6.680390342042527,
+        "pmdec": 1.7933147777073357,
+        "parallax": 0.341200043967266,
+        "phot_g_mean_mag": 20.566532,
+        "bp_rp": 0.89276886,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.00533667540998961
+      },
+      {
+        "source_id": "5347442439131695360",
+        "ra": 166.11419619123453,
+        "dec": -53.112891163886836,
+        "ref_epoch": 2016.0,
+        "pmra": -0.15875659361475586,
+        "pmdec": -0.43828201214236484,
+        "parallax": 0.6917121081309516,
+        "phot_g_mean_mag": 15.214616,
+        "bp_rp": 1.0379639,
+        "phot_variable_flag": "VARIABLE",
+        "has_epoch_photometry": true,
+        "separation_deg": 0.0055708846623815835
+      },
+      {
+        "source_id": "5347442473485480576",
+        "ra": 166.1263212462394,
+        "dec": -53.10373263299528,
+        "ref_epoch": 2016.0,
+        "pmra": -21.0150091772987,
+        "pmdec": 8.66346515087709,
+        "parallax": 0.7308974409257426,
+        "phot_g_mean_mag": 18.726126,
+        "bp_rp": 2.1610641,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.006127882511401535
+      },
+      {
+        "source_id": "5347442439126235136",
+        "ra": 166.1262596570738,
+        "dec": -53.113504712511904,
+        "ref_epoch": 2016.0,
+        "pmra": -3.8492073451842446,
+        "pmdec": 3.6269537149169944,
+        "parallax": 0.2740512018649415,
+        "phot_g_mean_mag": 20.07528,
+        "bp_rp": 1.0558357,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.00626987706511675
+      },
+      {
+        "source_id": "5347442473491630720",
+        "ra": 166.12040309127283,
+        "dec": -53.10207756229772,
+        "ref_epoch": 2016.0,
+        "pmra": -0.6295189010836169,
+        "pmdec": 4.741306408847332,
+        "parallax": 0.48344042737633164,
+        "phot_g_mean_mag": 14.547057,
+        "bp_rp": 1.4556904,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.00644251716231296
+      },
+      {
+        "source_id": "5347442439127104000",
+        "ra": 166.1181936312787,
+        "dec": -53.114951681031094,
+        "ref_epoch": 2016.0,
+        "pmra": -4.979979799263055,
+        "pmdec": 3.6802485331977683,
+        "parallax": 0.03807807831622324,
+        "phot_g_mean_mag": 20.585129,
+        "bp_rp": 1.4683647,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.00652218008158343
+      },
+      {
+        "source_id": "5347442434818579840",
+        "ra": 166.10921514658205,
+        "dec": -53.10643830988803,
+        "ref_epoch": 2016.0,
+        "pmra": -1.9806970722500212,
+        "pmdec": 1.7578690295720238,
+        "parallax": 0.28583783963562703,
+        "phot_g_mean_mag": 17.159725,
+        "bp_rp": 1.096693,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.006762914037861865
+      },
+      {
+        "source_id": "5347442434818578432",
+        "ra": 166.12360032755208,
+        "dec": -53.115107065726484,
+        "ref_epoch": 2016.0,
+        "pmra": -4.8458750818475345,
+        "pmdec": 3.062939128572898,
+        "parallax": 0.33131360469963506,
+        "phot_g_mean_mag": 17.825792,
+        "bp_rp": 1.0953426,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.006950094802042141
+      },
+      {
+        "source_id": "5347442439125706880",
+        "ra": 166.10946758852714,
+        "dec": -53.105234765738025,
+        "ref_epoch": 2016.0,
+        "pmra": -4.9401099615675035,
+        "pmdec": 1.4511202348450176,
+        "parallax": 0.40364275237970143,
+        "phot_g_mean_mag": 18.51893,
+        "bp_rp": 1.108551,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.007089085145728452
+      },
+      {
+        "source_id": "5347442473486866176",
+        "ra": 166.1297854045508,
+        "dec": -53.10437253045237,
+        "ref_epoch": 2016.0,
+        "pmra": null,
+        "pmdec": null,
+        "parallax": null,
+        "phot_g_mean_mag": 20.970318,
+        "bp_rp": 0.07911682,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.007218518469115626
+      },
+      {
+        "source_id": "5347442473485977600",
+        "ra": 166.1208414422209,
+        "dec": -53.1012107253276,
+        "ref_epoch": 2016.0,
+        "pmra": 0.6162084846940024,
+        "pmdec": 6.176173142695958,
+        "parallax": 0.5918648802040615,
+        "phot_g_mean_mag": 20.328676,
+        "bp_rp": 1.7752342,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "has_epoch_photometry": false,
+        "separation_deg": 0.0073234317491541355
+      }
+    ]
+  },
+  "conclusion": "Previously published eclipsing signal"
+}
