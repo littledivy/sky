@@ -40,15 +40,15 @@ From the repository root, with the Sky virtual environment active and Matplotlib
 sky tess 105 106 --cache data/tess --prioritize-new-since {1..104} \
   --limit 900 --workers 10 --search sparse > tess-105-106.json
 
-python tess_catalogs.py tess-105-106.json --cache data/tess \
+python experiments/tess/tess_catalogs.py tess-105-106.json --cache data/tess \
   --source-tic 88481083
 
-MPLBACKEND=Agg python tess_vet.py tess-105-106.json 88481081 \
+MPLBACKEND=Agg python experiments/tess/tess_vet.py tess-105-106.json 88481081 \
   --cache data/tess --output output/tess/88481083 \
   --extra-sectors 107 108 --duration-days .10 --window-days .25 \
   --source-coordinate 47.26535016 -26.19797613 --secondary-phase .5
 
-python tess_ztf_check.py output/tess/88481083/fit.json \
+python experiments/tess/tess_ztf_check.py output/tess/88481083/fit.json \
   output/tess/88481083/ztf-irsa.csv --half-window-days .045 \
   --output output/tess/88481083/ztf-eclipse-check.csv
 ```

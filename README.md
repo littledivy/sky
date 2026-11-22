@@ -80,14 +80,14 @@ predicts events in adequately sampled windows with no corresponding dip.
 Both searches report the input product URLs, coverage counts, and timings.
 
 The output is a shortlist for pixel localization and catalogue and literature
-checks. Run `python tess_catalogs.py tess-107-108.json` to match
+checks. Run `python experiments/tess/tess_catalogs.py tess-107-108.json` to match
 repeaters against five published TIC tables, including the IJspeert et al.
 eclipsing-binary table. For box-shaped repeaters, `sky.tess_pixels.localize` estimates the
 position of the variable component from public target pixel files using the
 ephemeris and paired in-event and out-of-event flux measurements.
 Use `--source-tic` when the variable has a different TIC identifier from the
-SPOC aperture target. The follow-up script `tess_vet.py` can fit and localize
-a second eclipse. `tess_ztf_check.py` checks a fixed two-eclipse ephemeris in
+SPOC aperture target. The follow-up script `experiments/tess/tess_vet.py` can fit and localize
+a second eclipse. `experiments/tess/tess_ztf_check.py` checks a fixed two-eclipse ephemeris in
 resolved ZTF light curves.
 
 The [Gaia DR3 5073603089619768704 analysis](output/tess/88481083/report.md)

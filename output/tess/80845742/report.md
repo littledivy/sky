@@ -38,7 +38,7 @@ From the repository root, with the Sky virtual environment active and Matplotlib
 sky tess 99 100 --cache data/tess --prioritize-new-since {1..98} \
   --limit 900 --workers 10 --search sparse > tess-99-100.json
 
-MPLBACKEND=Agg python tess_vet.py tess-99-100.json 80845742 \
+MPLBACKEND=Agg python experiments/tess/tess_vet.py tess-99-100.json 80845742 \
   --cache data/tess --output output/tess/80845742 \
   --shift-days .125 --duration-days .42 --window-days .62 \
   --ffi-sectors 10 37 63 64 90

@@ -21,9 +21,9 @@ Boyle, Bouma and Mann's TESS All-Sky Rotation Survey reports the 5.927-hour peri
 Run from the repository root in the Sky Python environment, with Matplotlib installed.
 
 ```sh
-python tess_modes.py output/tess/287893983/scan-candidate.json 287893983 \
+python experiments/tess/tess_modes.py output/tess/287893983/scan-candidate.json 287893983 \
   --cache data/tess --output output/tess/287893983 \
   --ffi-sectors 10 11 37 38 64 101 --components 3
-python tess_coherence.py output/tess/287893983/fit.json \
+python experiments/tess/tess_coherence.py output/tess/287893983/fit.json \
   output/tess/287893983/tars-products.json --cache data/tess --held-out 11 38 100
 ```
