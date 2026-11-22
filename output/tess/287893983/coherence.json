@@ -1,0 +1,61 @@
+{
+  "tic": 287893983,
+  "reference_btjd": 4063.2792052395985,
+  "training_aliases": [
+    {
+      "frequency_per_day": 3.768820634995819,
+      "fit_power": 0.005120715255989129
+    },
+    {
+      "frequency_per_day": 3.7677000001230674,
+      "fit_power": 0.003908573516556878
+    },
+    {
+      "frequency_per_day": 3.7699400804435923,
+      "fit_power": 0.0038227231652485432
+    },
+    {
+      "frequency_per_day": 3.7708000139786164,
+      "fit_power": 0.0029649410802795022
+    }
+  ],
+  "training_period_hours": 6.368039852346707,
+  "sectors": {
+    "10": {
+      "held_out": false,
+      "phase_offset_minutes": 0.9148686865615252,
+      "semi_amplitude_ppm": 634.7539256490904
+    },
+    "11": {
+      "held_out": true,
+      "phase_offset_minutes": 5.511073249194776,
+      "semi_amplitude_ppm": 651.0098073747388
+    },
+    "37": {
+      "held_out": false,
+      "phase_offset_minutes": 1.0261776188881728,
+      "semi_amplitude_ppm": 596.7089151291343
+    },
+    "38": {
+      "held_out": true,
+      "phase_offset_minutes": 0.9851172086232625,
+      "semi_amplitude_ppm": 610.1281258711689
+    },
+    "64": {
+      "held_out": false,
+      "phase_offset_minutes": -0.7925568413666566,
+      "semi_amplitude_ppm": 578.1037934382624
+    },
+    "99": {
+      "held_out": false,
+      "phase_offset_minutes": 0.29325386925940156,
+      "semi_amplitude_ppm": 593.8141914969406
+    },
+    "100": {
+      "held_out": true,
+      "phase_offset_minutes": 0.7487289580247418,
+      "semi_amplitude_ppm": 610.1528241365711
+    }
+  },
+  "joint_fit_frequency_per_day": 3.7688214604261727
+}

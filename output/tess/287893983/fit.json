@@ -1,0 +1,290 @@
+{
+  "tic": 287893983,
+  "aperture_icrs_deg": [
+    184.836998911471,
+    -59.2912493314744
+  ],
+  "discovery_sector": 99,
+  "discovery_frequencies_per_day": [
+    4.049157894039212,
+    3.7687646132055415,
+    3.3922746642184016
+  ],
+  "discovery_periods_hours": [
+    5.927158344536412,
+    6.368134511745662,
+    7.074898814400611
+  ],
+  "sectors": {
+    "99": {
+      "light_curve_url": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0002/8789/3983/tess2026005125623-s0099-0000000287893983-0300-s_lc.fits",
+      "pixel_url": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0099/0000/0002/8789/3983/tess2026005125623-s0099-0000000287893983-0300-s_tp.fits",
+      "cadences": 13906,
+      "exposure_minutes": 2.0,
+      "independently_fitted_frequencies_per_day": [
+        4.049157894260648,
+        3.76876461325545,
+        3.3922746640788564
+      ],
+      "fixed_frequency_semi_amplitudes_fraction": [
+        [
+          0.0010145160546954659,
+          3.731389527059686e-05
+        ],
+        [
+          0.000593818797709353,
+          9.817429495097952e-05
+        ],
+        [
+          0.00023465144813717404,
+          6.881633899474154e-06
+        ]
+      ],
+      "fixed_frequency_r_squared": 0.7248125682038564,
+      "residual_variance_reduction_per_frequency": [
+        0.6633117465597186,
+        0.4090072761136858,
+        0.09630112959427273
+      ],
+      "frequency_amplitude_centroids_icrs": [
+        {
+          "ra_deg": 184.8367815897912,
+          "dec_deg": -59.29087783607664
+        },
+        {
+          "ra_deg": 184.83895158682571,
+          "dec_deg": -59.291918486292296
+        },
+        {
+          "ra_deg": 184.83764373620886,
+          "dec_deg": -59.289396337548
+        }
+      ]
+    },
+    "100": {
+      "light_curve_url": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0002/8789/3983/tess2026033082000-s0100-0000000287893983-0302-s_lc.fits",
+      "pixel_url": "https://stpubdata.s3.us-east-1.amazonaws.com/tess/public/tid/s0100/0000/0002/8789/3983/tess2026033082000-s0100-0000000287893983-0302-s_tp.fits",
+      "cadences": 17434,
+      "exposure_minutes": 2.0,
+      "independently_fitted_frequencies_per_day": [
+        4.049356045582804,
+        3.7686674124274773,
+        3.3930068489303036
+      ],
+      "fixed_frequency_semi_amplitudes_fraction": [
+        [
+          0.0010219847980010995,
+          4.97883819119101e-05
+        ],
+        [
+          0.0006093540213292496,
+          0.00011988758521263679
+        ],
+        [
+          0.00024235775649500876,
+          5.4201679938809325e-06
+        ]
+      ],
+      "fixed_frequency_r_squared": 0.733444528542406,
+      "residual_variance_reduction_per_frequency": [
+        0.6436771920498525,
+        0.40014870133813596,
+        0.0928108743358681
+      ],
+      "frequency_amplitude_centroids_icrs": [
+        {
+          "ra_deg": 184.8385404884171,
+          "dec_deg": -59.29013466225201
+        },
+        {
+          "ra_deg": 184.83512446919877,
+          "dec_deg": -59.292085217168655
+        },
+        {
+          "ra_deg": 184.83552595106823,
+          "dec_deg": -59.29289670097292
+        }
+      ]
+    },
+    "10": {
+      "full_frame_cutout_url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=184.836998911471&dec=-59.2912493314744&x=9&y=9&units=px&sector=10",
+      "cadences": 1099,
+      "exposure_minutes": 30.0,
+      "independently_fitted_frequencies_per_day": [
+        4.049335221392528,
+        3.769143104686905,
+        3.3926866943889307
+      ],
+      "fixed_frequency_semi_amplitudes_fraction": [
+        [
+          0.001023882588399123,
+          4.4179136647075096e-05
+        ],
+        [
+          0.000609068283460702,
+          9.801196465396183e-05
+        ],
+        [
+          0.00024363138635597297,
+          1.4933211163276537e-05
+        ]
+      ],
+      "fixed_frequency_r_squared": 0.2512769030417664,
+      "residual_variance_reduction_per_frequency": [
+        0.1954548947862228,
+        0.08115713691353277,
+        0.013654014392013858
+      ]
+    },
+    "11": {
+      "full_frame_cutout_url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=184.836998911471&dec=-59.2912493314744&x=9&y=9&units=px&sector=11",
+      "cadences": 1145,
+      "exposure_minutes": 30.0,
+      "independently_fitted_frequencies_per_day": [
+        4.049218875629245,
+        3.7697500156208816,
+        3.3931641583230103
+      ],
+      "fixed_frequency_semi_amplitudes_fraction": [
+        [
+          0.0010223705957034404,
+          4.018753984852272e-05
+        ],
+        [
+          0.0005678176136029742,
+          0.0001328693693361651
+        ],
+        [
+          0.00029480299668824944,
+          2.0645465411742385e-05
+        ]
+      ],
+      "fixed_frequency_r_squared": 0.20409007900815113,
+      "residual_variance_reduction_per_frequency": [
+        0.15229669779434973,
+        0.05472651815945506,
+        0.014832345097346655
+      ]
+    },
+    "37": {
+      "full_frame_cutout_url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=184.836998911471&dec=-59.2912493314744&x=9&y=9&units=px&sector=37",
+      "cadences": 3461,
+      "exposure_minutes": 10.0,
+      "independently_fitted_frequencies_per_day": [
+        4.049187119842045,
+        3.7676073622189628,
+        3.39405480038955
+      ],
+      "fixed_frequency_semi_amplitudes_fraction": [
+        [
+          0.0010543498159214524,
+          5.379453805406185e-05
+        ],
+        [
+          0.0006000073358842796,
+          0.00011159657003786379
+        ],
+        [
+          0.00025544721769824074,
+          2.1351692238993493e-05
+        ]
+      ],
+      "fixed_frequency_r_squared": 0.15061371106451826,
+      "residual_variance_reduction_per_frequency": [
+        0.11154478251955358,
+        0.040157961068898684,
+        0.0073315457656238925
+      ]
+    },
+    "38": {
+      "full_frame_cutout_url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=184.836998911471&dec=-59.2912493314744&x=9&y=9&units=px&sector=38",
+      "cadences": 3693,
+      "exposure_minutes": 10.0,
+      "independently_fitted_frequencies_per_day": [
+        4.0492087530749785,
+        3.767910016735932,
+        3.3912755933774648
+      ],
+      "fixed_frequency_semi_amplitudes_fraction": [
+        [
+          0.0009971228139865277,
+          1.6192672914321284e-05
+        ],
+        [
+          0.0006215916642483782,
+          0.00011316075524023005
+        ],
+        [
+          0.00027447216816253457,
+          2.376233799875954e-05
+        ]
+      ],
+      "fixed_frequency_r_squared": 0.12621318201965148,
+      "residual_variance_reduction_per_frequency": [
+        0.08530824337195853,
+        0.03615701583691755,
+        0.00712062815374348
+      ]
+    },
+    "64": {
+      "full_frame_cutout_url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=184.836998911471&dec=-59.2912493314744&x=9&y=9&units=px&sector=64",
+      "cadences": 11201,
+      "exposure_minutes": 3.3333333333336,
+      "independently_fitted_frequencies_per_day": [
+        4.049929277718412,
+        3.76967061544697,
+        3.391136927703324
+      ],
+      "fixed_frequency_semi_amplitudes_fraction": [
+        [
+          0.0010320051136445527,
+          4.45687577763643e-05
+        ],
+        [
+          0.0005830812343361768,
+          0.00011580456707756182
+        ],
+        [
+          0.00026993919403196185,
+          1.7441596672063606e-05
+        ]
+      ],
+      "fixed_frequency_r_squared": 0.3289738145917498,
+      "residual_variance_reduction_per_frequency": [
+        0.2648859350185484,
+        0.10698947673480186,
+        0.02420178470808909
+      ]
+    },
+    "101": {
+      "full_frame_cutout_url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=184.836998911471&dec=-59.2912493314744&x=9&y=9&units=px&sector=101",
+      "cadences": 10853,
+      "exposure_minutes": 3.3333333333333117,
+      "independently_fitted_frequencies_per_day": [
+        4.048522644518531,
+        3.7707576894050625,
+        3.3939158536231964
+      ],
+      "fixed_frequency_semi_amplitudes_fraction": [
+        [
+          0.0009709329467782686,
+          0.00010126556442293593
+        ],
+        [
+          0.0005441619193676126,
+          8.842339412732964e-05
+        ],
+        [
+          0.00023665400703261685,
+          1.4549776951919975e-05
+        ]
+      ],
+      "fixed_frequency_r_squared": 0.035266214991071965,
+      "residual_variance_reduction_per_frequency": [
+        0.0266526251909599,
+        0.00866945124971441,
+        0.0016074044856267955
+      ]
+    }
+  }
+}

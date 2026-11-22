@@ -101,6 +101,9 @@ independent-sector predictions, archival measurements, pixel checks, and
 prior-publication match. [TIC 390471207](output/tess/390471207/catalog-checks.json)
 also matched a previously published eclipsing signal.
 
+The [HD 107126 analysis](output/tess/287893983/report.md) documents a 6.368-hour
+photometric signal across seven years of TESS data and the checks for prior reports.
+
 ## Local HTTP API
 
 ```sh
