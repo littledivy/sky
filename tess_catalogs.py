@@ -32,6 +32,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("reports", nargs="+", type=Path)
     parser.add_argument("--cache", type=Path, default=Path("data/tess"))
+    parser.add_argument("--source-tic", type=int, action="append", default=[],
+                        help="Also check a source identified by pixel localization")
     args = parser.parse_args()
     with ThreadPoolExecutor(max_workers=len(CATALOGS)) as pool:
         index = list(pool.map(lambda entry: catalog(args.cache, entry[0], *entry[1]), CATALOGS.items()))
@@ -44,7 +46,10 @@ def main():
             matches = [name for name, _, ids in index if candidate["tic"] in ids]
             results.append({"report": str(path), "tic": candidate["tic"],
                             "spacing_days": candidate["spacing_days"], "catalog_matches": matches})
-    print(json.dumps({"catalogs": {name: meta for name, meta, _ in index}, "results": results}, indent=2))
+    sources = [{"tic": tic, "catalog_matches": [name for name, _, ids in index if tic in ids]}
+               for tic in args.source_tic]
+    print(json.dumps({"catalogs": {name: meta for name, meta, _ in index}, "results": results,
+                      "localized_sources": sources}, indent=2))
 
 
 if __name__ == "__main__":

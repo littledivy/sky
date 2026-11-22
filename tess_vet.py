@@ -158,6 +158,9 @@ def main():
     parser.add_argument("--shift-days", type=float, default=0)
     parser.add_argument("--duration-days", type=float, required=True)
     parser.add_argument("--window-days", type=float, required=True)
+    parser.add_argument("--source-coordinate", nargs=2, type=float, metavar=("RA", "DEC"),
+                        help="ICRS degrees of the proposed source of the eclipse")
+    parser.add_argument("--secondary-phase", type=float, help="Initial phase of a second eclipse")
     args = parser.parse_args()
     if not 0 < args.duration_days < args.window_days:
         parser.error("Use a positive eclipse duration shorter than the fit window.")
@@ -186,6 +189,23 @@ def main():
     holdout = event_measurements(events, first_fit, period, epoch)
     fit = fit_eclipse(events, period, epoch, args.duration_days, args.window_days)
     measurement = event_measurements(events, fit, period, epoch)
+    secondary_holdout = None
+    secondary_fit = None
+    if args.secondary_phase is not None:
+        second_epoch = epoch + args.secondary_phase * period
+        secondary_events = [
+            event for sector, curve in curves.items()
+            for event in events_for(curve, sector, period, second_epoch, args.window_days)
+        ]
+        secondary_discovery = [event for event in secondary_events if event[0] == first]
+        if len(secondary_discovery) < 3:
+            raise ValueError("At least three usable secondary events are needed in the discovery sector.")
+        secondary_discovery_fit = fit_eclipse(
+            secondary_discovery, period, second_epoch, args.duration_days, args.window_days)
+        secondary_holdout = event_measurements(
+            secondary_events, secondary_discovery_fit, period, second_epoch)
+        secondary_fit = fit_eclipse(
+            secondary_events, period, second_epoch, args.duration_days, args.window_days)
     jackknife = [
         fit_eclipse(events[:i] + events[i+1:], period, epoch, args.duration_days, args.window_days)
         for i in range(len(events))
@@ -195,28 +215,42 @@ def main():
                   key: float(np.std([row[key] for row in jackknife]) * np.sqrt(len(jackknife) - 1))
                   for key in fit
               }}
+    if secondary_fit:
+        result.update(secondary_fit=secondary_fit, secondary_discovery_fit=secondary_discovery_fit)
+    catalog_coordinate = (candidate["RA_OBJ"], candidate["DEC_OBJ"])
+    source_coordinate = args.source_coordinate or catalog_coordinate
+    result.update(aperture_target_icrs_deg=catalog_coordinate, proposed_source_icrs_deg=source_coordinate)
     for sector, source in sources.items():
         pixel_url = source.replace("_lc.fits", "_tp.fits")
         path = download(pixel_url, args.cache / "pixels" / pixel_url.rsplit("/", 1)[-1], verify_fits=True)
         files[sector].update(pixel_url=pixel_url, pixel_sha256=hashlib.sha256(path.read_bytes()).hexdigest())
-        try:
-            files[sector]["localization"] = localize(
-                path, fit["period_days"], fit["mid_eclipse_btjd"], fit["duration_days"],
-                target_ra=candidate["RA_OBJ"], target_dec=candidate["DEC_OBJ"], minimum_events=3)
-        except ValueError as error:
-            files[sector]["localization_error"] = str(error)
+        eclipse_fits = {"localization": fit}
+        if secondary_fit:
+            eclipse_fits["secondary_localization"] = secondary_fit
+        for key, eclipse in eclipse_fits.items():
+            try:
+                files[sector][key] = localize(
+                    path, eclipse["period_days"], eclipse["mid_eclipse_btjd"], eclipse["duration_days"],
+                    target_ra=source_coordinate[0], target_dec=source_coordinate[1], minimum_events=3)
+            except ValueError as error:
+                files[sector][f"{key}_error"] = str(error)
     args.output.mkdir(parents=True, exist_ok=True)
     if args.ffi_sectors:
         result["ffi_products"], result["long_baseline_ephemeris"] = check_ffi(
             candidate, args.ffi_sectors, args.cache, args.output, fit)
     (args.output / "fit.json").write_text(json.dumps(result, indent=2, allow_nan=False) + "\n")
-    for name, rows in (("events", measurement), ("discovery_ephemeris_checks", holdout)):
+    evidence = {"events": measurement, "discovery_ephemeris_checks": holdout}
+    if secondary_holdout:
+        evidence["secondary_ephemeris_checks"] = secondary_holdout
+    for name, rows in evidence.items():
         with (args.output / f"{name}.csv").open("w", newline="") as stream:
             writer = csv.writer(stream, lineterminator="\n")
             writer.writerow(("sector", "cycle", "predicted_mid_btjd", "depth_fraction", "white_noise_depth_se"))
             writer.writerows(row[:5] for row in rows)
     plot(measurement, fit, args.output / "eclipses.png")
     write_phase(curves, result.get("long_baseline_ephemeris", fit), args.output)
+    if args.source_coordinate:
+        plot_localizations(files, source_coordinate, catalog_coordinate, args.output / "localizations.png")
 
 
 def plot(rows, fit, output):
@@ -263,6 +297,31 @@ def write_phase(curves, fit, output):
     timeline.set(xlabel="BTJD (BJD TDB − 2,457,000)", ylabel="Differential TESS magnitude (mmag)")
     timeline.invert_yaxis()
     fig.savefig(output / "phase.png", dpi=180)
+    plt.close(fig)
+
+
+def plot_localizations(files, source, aperture, output):
+    import matplotlib.pyplot as plt
+
+    fig, axis = plt.subplots(figsize=(7.4, 3.7), layout="constrained")
+    projection = np.array([np.cos(np.deg2rad(source[1])), 1]) * 3600
+    aperture_offset = (np.asarray(aperture) - source) * projection
+    axis.scatter(*aperture_offset, marker="x", s=100, color="#794837", label="SPOC aperture target")
+    axis.scatter(0, 0, marker="*", s=150, color="black", label="Proposed Gaia source")
+    for key, label, marker, color in (
+        ("localization", "Primary eclipse", "o", "#286a9d"),
+        ("secondary_localization", "Secondary eclipse", "s", "#dc6b37"),
+    ):
+        localized = [file[key] for file in files.values() if key in file]
+        if not localized:
+            continue
+        positions = np.asarray([(row["ra_deg"], row["dec_deg"]) for row in localized])
+        x, y = ((positions - source) * projection).T
+        axis.scatter(x, y, marker=marker, color=color, s=36, alpha=.8, label=label)
+    axis.set(xlabel="Eastward offset (arcsec)", ylabel="Northward offset (arcsec)", aspect="equal")
+    axis.set_ylim(-6, 6)
+    axis.legend(loc="upper center", bbox_to_anchor=(.5, 1.27), ncols=2, fontsize=8)
+    fig.savefig(output, dpi=180)
     plt.close(fig)
 
 

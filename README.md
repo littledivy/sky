@@ -85,6 +85,10 @@ repeaters against five published TIC tables, including the IJspeert et al.
 eclipsing-binary table. For box-shaped repeaters, `sky.tess_pixels.localize` estimates the
 position of the variable component from public target pixel files using the
 ephemeris and paired in-event and out-of-event flux measurements.
+Use `--source-tic` when the variable has a different TIC identifier from the
+SPOC aperture target. The follow-up script `tess_vet.py` can fit and localize
+a second eclipse. `tess_ztf_check.py` checks a fixed two-eclipse ephemeris in
+resolved ZTF light curves.
 
 The [HD 96135 recovery](output/tess/80845742/report.md) includes the scan, independent-sector predictions, archival measurements, pixel checks, and prior-publication match.
 
