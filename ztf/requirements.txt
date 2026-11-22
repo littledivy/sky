@@ -1,0 +1,5 @@
+astropy==8.0.3
+numpy==2.5.5
+pyarrow==26.0.1
+scipy==1.18.1
+nifty-ls==1.1.0

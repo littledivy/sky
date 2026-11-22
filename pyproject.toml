@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sky-survey"
+version = "0.1.0"
+description = "Run astronomy experiments across survey archives"
+requires-python = ">=3.14"
+dependencies = [
+    "astropy==8.0.3",
+    "numpy==2.5.5",
+    "nifty-ls==1.1.0",
+    "pyarrow==26.0.1",
+    "scipy==1.18.1",
+    "astroquery==0.4.11",
+    "requests==2.34.2",
+    "fastapi==0.165.0",
+    "uvicorn==0.54.0",
+]
+
+[project.scripts]
+sky = "sky.cli:main"
+
+[tool.setuptools]
+packages = ["sky", "ztf"]

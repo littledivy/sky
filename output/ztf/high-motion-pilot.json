@@ -1,0 +1,291 @@
+{
+  "experiment": "high-proper-motion-eclipses",
+  "selection": {
+    "minimum_proper_motion_mas_yr": 150,
+    "gaia_g_magnitude_range": [
+      12,
+      21.5
+    ],
+    "position_track_years": [
+      2018,
+      2025.9
+    ],
+    "position_tolerance_arcsec": 0.85,
+    "period_range_minutes": [
+      5,
+      60
+    ],
+    "confirmation_threshold_nominal_sigma": 3
+  },
+  "seconds": 5.624865750025492,
+  "patches": [
+    {
+      "field": 697,
+      "channel": 0,
+      "radius_deg": 0.6232029482634979,
+      "center_ra_deg": 32.97220444889234,
+      "center_dec_deg": 38.0327982131098,
+      "counts": {
+        "gaia_sample": 5,
+        "gaia_sources_with_unique_band_match": 3,
+        "curves_examined": 5,
+        "insufficient_window_epochs": 2,
+        "failed_holdout": 3
+      },
+      "results": [
+        {
+          "gaia": {
+            "source_id": "332190534658841216",
+            "ra": "32.79797894906537",
+            "dec": "37.941991403935944",
+            "ref_epoch": "2016.0",
+            "pmra": "78.90559110223617",
+            "pmdec": "-132.7476162642259",
+            "phot_g_mean_mag": "19.56466",
+            "bp_rp": "2.1436653"
+          },
+          "proper_motion_mas_yr": 154.42804774725175,
+          "ztf_objects": [
+            697101100010277,
+            697201100007586
+          ],
+          "candidates": []
+        },
+        {
+          "gaia": {
+            "source_id": "332287948813549568",
+            "ra": "33.068943134513376",
+            "dec": "38.1477733279309",
+            "ref_epoch": "2016.0",
+            "pmra": "166.0652707778049",
+            "pmdec": "-127.5687056142099",
+            "phot_g_mean_mag": "15.04113",
+            "bp_rp": "1.7745686"
+          },
+          "proper_motion_mas_yr": 209.4073752535727,
+          "ztf_objects": [
+            697101100002674,
+            697201100004427
+          ],
+          "candidates": []
+        },
+        {
+          "gaia": {
+            "source_id": "332310347066704000",
+            "ra": "33.18043017444404",
+            "dec": "38.44836926352401",
+            "ref_epoch": "2016.0",
+            "pmra": "131.75219627022247",
+            "pmdec": "-78.38068810923238",
+            "phot_g_mean_mag": "20.2163",
+            "bp_rp": "2.9407043"
+          },
+          "proper_motion_mas_yr": 153.30418614801093,
+          "ztf_objects": [
+            697201100000025
+          ],
+          "candidates": []
+        }
+      ],
+      "inputs": [
+        "https://irsa.ipac.caltech.edu/data/ZTF/lc/lc_dr24/0/field000697/ztf_000697_zg_c01_q1_dr24.parquet",
+        "https://irsa.ipac.caltech.edu/data/ZTF/lc/lc_dr24/0/field000697/ztf_000697_zr_c01_q1_dr24.parquet"
+      ]
+    },
+    {
+      "field": 760,
+      "channel": 54,
+      "radius_deg": 0.6189620607455342,
+      "center_ra_deg": 234.8266015820692,
+      "center_dec_deg": 50.19768123780141,
+      "counts": {
+        "gaia_sample": 8,
+        "gaia_sources_with_unique_band_match": 5,
+        "curves_examined": 9,
+        "failed_holdout": 8,
+        "candidate": 1
+      },
+      "results": [
+        {
+          "gaia": {
+            "source_id": "1402640970599703296",
+            "ra": "234.87431041683826",
+            "dec": "49.77013654498575",
+            "ref_epoch": "2016.0",
+            "pmra": "-168.45975487565843",
+            "pmdec": "-144.2943122606065",
+            "phot_g_mean_mag": "18.106995",
+            "bp_rp": "3.518465"
+          },
+          "proper_motion_mas_yr": 221.80968771342773,
+          "ztf_objects": [
+            760114300004921
+          ],
+          "candidates": []
+        },
+        {
+          "gaia": {
+            "source_id": "1402761749376062976",
+            "ra": "235.0279168303261",
+            "dec": "50.25058665847205",
+            "ref_epoch": "2016.0",
+            "pmra": "-100.02185596543717",
+            "pmdec": "132.3978364123828",
+            "phot_g_mean_mag": "15.612695",
+            "bp_rp": "2.6356544"
+          },
+          "proper_motion_mas_yr": 165.93239212839285,
+          "ztf_objects": [
+            760114300002178,
+            760214300003464
+          ],
+          "candidates": []
+        },
+        {
+          "gaia": {
+            "source_id": "1402763742240778752",
+            "ra": "235.15514427961347",
+            "dec": "50.334111460539305",
+            "ref_epoch": "2016.0",
+            "pmra": "-66.81796479696193",
+            "pmdec": "-137.08493888814155",
+            "phot_g_mean_mag": "17.075987",
+            "bp_rp": "1.7269707"
+          },
+          "proper_motion_mas_yr": 152.50219962208266,
+          "ztf_objects": [
+            760114300001693,
+            760214300002692
+          ],
+          "candidates": []
+        },
+        {
+          "gaia": {
+            "source_id": "1402784770400655616",
+            "ra": "235.27782000445657",
+            "dec": "50.38599092729022",
+            "ref_epoch": "2016.0",
+            "pmra": "2.266843494213198",
+            "pmdec": "-158.09290883610782",
+            "phot_g_mean_mag": "16.878992",
+            "bp_rp": "3.0283318"
+          },
+          "proper_motion_mas_yr": 158.10915977162472,
+          "ztf_objects": [
+            760114300011075,
+            760214300002163
+          ],
+          "candidates": [
+            {
+              "objectid": 760114300011075,
+              "ra_deg": 235.27783203125,
+              "dec_deg": 50.38591003417969,
+              "filterid": 1,
+              "period_minutes": 37.47308121561694,
+              "eclipse_duration_seconds": 90.0,
+              "eclipse_epoch_hmjd": 58230.39220597222,
+              "window_start_hmjd": 58230.36764,
+              "training_epochs": 96,
+              "holdout_epochs": 47,
+              "holdout_eclipses": 2,
+              "holdout_delta_chi2": 0.25994939721699784,
+              "other_band": {
+                "status": "tested",
+                "epochs": 134,
+                "eclipses": 9,
+                "depth_mag": -0.0003622996012424551,
+                "nominal_depth_sigma": -0.04297584654032868
+              }
+            }
+          ]
+        },
+        {
+          "gaia": {
+            "source_id": "1402811811514771840",
+            "ra": "234.9824481093556",
+            "dec": "50.45166604875005",
+            "ref_epoch": "2016.0",
+            "pmra": "-128.4450469017697",
+            "pmdec": "77.56517224351603",
+            "phot_g_mean_mag": "16.904747",
+            "bp_rp": "2.935295"
+          },
+          "proper_motion_mas_yr": 150.04827895968725,
+          "ztf_objects": [
+            760114300000986,
+            760214300001582
+          ],
+          "candidates": []
+        }
+      ],
+      "inputs": [
+        "https://irsa.ipac.caltech.edu/data/ZTF/lc/lc_dr24/0/field000760/ztf_000760_zg_c14_q3_dr24.parquet",
+        "https://irsa.ipac.caltech.edu/data/ZTF/lc/lc_dr24/0/field000760/ztf_000760_zr_c14_q3_dr24.parquet"
+      ]
+    },
+    {
+      "field": 760,
+      "channel": 55,
+      "radius_deg": 0.6217582467948567,
+      "center_ra_deg": 236.17577424049986,
+      "center_dec_deg": 50.18041739335759,
+      "counts": {
+        "gaia_sample": 3,
+        "gaia_sources_with_unique_band_match": 2,
+        "curves_examined": 4,
+        "failed_holdout": 3,
+        "insufficient_window_epochs": 1
+      },
+      "results": [
+        {
+          "gaia": {
+            "source_id": "1402501646156660096",
+            "ra": "236.46371855013876",
+            "dec": "49.84506127560122",
+            "ref_epoch": "2016.0",
+            "pmra": "-176.75493394465087",
+            "pmdec": "147.85571817111824",
+            "phot_g_mean_mag": "17.7783",
+            "bp_rp": "2.491621"
+          },
+          "proper_motion_mas_yr": 230.44222718433147,
+          "ztf_objects": [
+            760114400004183,
+            760214400006915
+          ],
+          "candidates": []
+        },
+        {
+          "gaia": {
+            "source_id": "1404085183419208960",
+            "ra": "236.2151004910686",
+            "dec": "50.30800849651656",
+            "ref_epoch": "2016.0",
+            "pmra": "-156.47465859952933",
+            "pmdec": "83.64882076622524",
+            "phot_g_mean_mag": "18.80762",
+            "bp_rp": "3.95549"
+          },
+          "proper_motion_mas_yr": 177.4301101826275,
+          "ztf_objects": [
+            760114400001646,
+            760214400002789
+          ],
+          "candidates": []
+        }
+      ],
+      "inputs": [
+        "https://irsa.ipac.caltech.edu/data/ZTF/lc/lc_dr24/0/field000760/ztf_000760_zg_c14_q4_dr24.parquet",
+        "https://irsa.ipac.caltech.edu/data/ZTF/lc/lc_dr24/0/field000760/ztf_000760_zr_c14_q4_dr24.parquet"
+      ]
+    }
+  ],
+  "coverage": {
+    "gaia_sample": 16,
+    "gaia_sources_with_unique_band_match": 10,
+    "curves_examined": 18,
+    "insufficient_window_epochs": 3,
+    "failed_holdout": 14,
+    "candidate": 1
+  }
+}
