@@ -221,7 +221,8 @@
     "period_days": null,
     "epoch": null,
     "eclipse_duration": null,
-    "discoverer": "Gaia collaboration"
+    "discoverer": "Gaia collaboration",
+    "revision_pending": true
   },
   "live_tess_eb": {
     "url": "https://tessebs.villanova.edu/search_results?tic=88481083",
@@ -358,9 +359,26 @@
     "88481083",
     "03090374-2611523"
   ],
-  "conclusion": "Gaia previously classified this source as RS. The checks found no prior eclipse ephemeris.",
+  "conclusion": "Gaia classified the source as RS. A November 19, 2026 Planet Hunters TESS discussion reports both the eclipse interpretation and the orbital period, before the Sky analysis.",
   "independent_photometry": {
     "survey": "ZTF",
     "query": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?POS=CIRCLE+47.26535016+-26.19797613+0.0012&FORMAT=csv"
+  },
+  "prior_public_report": {
+    "discussion_url": "https://www.zooniverse.org/projects/nora-dot-eisner/planet-hunters-tess/talk/2110/4185529",
+    "analysis_url": "https://github.com/moosesteve21/PlanetCandidates/tree/main/checks/TIC88481081",
+    "initial_report": {
+      "user": "DAAN11",
+      "utc": "2026-11-19T12:50:17.988Z",
+      "aperture_tic": 88481081,
+      "dip_spacing_days_approx": 1.73
+    },
+    "eclipse_identification": {
+      "user": "moosehunter21",
+      "utc": "2026-11-19T17:28:49.757Z",
+      "comment_id": 6834417,
+      "source_tic": 88481083,
+      "period_days": 3.4608
+    }
   }
 }

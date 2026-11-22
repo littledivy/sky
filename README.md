@@ -92,7 +92,8 @@ resolved ZTF light curves.
 
 The [Gaia DR3 5073603089619768704 analysis](output/tess/88481083/report.md)
 includes the proposed VSX revision, phase and localization plots, TESS and ZTF
-measurements, and catalog checks. The [initial aperture fit](output/tess/88481081/fit.json)
+measurements, and the earlier Planet Hunters TESS report that the Sky analysis
+independently reproduces. The [initial aperture fit](output/tess/88481081/fit.json)
 records the signal in the light curve of its brighter neighbor.
 
 The [HD 96135 recovery](output/tess/80845742/report.md) includes the scan,
