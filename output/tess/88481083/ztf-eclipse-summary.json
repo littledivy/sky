@@ -1,0 +1,7 @@
+{
+  "good_observations": 85,
+  "night_band_groups": 68,
+  "in_window_groups": 6,
+  "groups_fainter_than_band_median": 6,
+  "mean_dimming_mag": 0.03931797499999975
+}

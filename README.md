@@ -90,7 +90,15 @@ SPOC aperture target. The follow-up script `tess_vet.py` can fit and localize
 a second eclipse. `tess_ztf_check.py` checks a fixed two-eclipse ephemeris in
 resolved ZTF light curves.
 
-The [HD 96135 recovery](output/tess/80845742/report.md) includes the scan, independent-sector predictions, archival measurements, pixel checks, and prior-publication match.
+The [Gaia DR3 5073603089619768704 analysis](output/tess/88481083/report.md)
+includes the proposed VSX revision, phase and localization plots, TESS and ZTF
+measurements, and catalog checks. The [initial aperture fit](output/tess/88481081/fit.json)
+records the signal in the light curve of its brighter neighbor.
+
+The [HD 96135 recovery](output/tess/80845742/report.md) includes the scan,
+independent-sector predictions, archival measurements, pixel checks, and
+prior-publication match. [TIC 390471207](output/tess/390471207/catalog-checks.json)
+also matched a previously published eclipsing signal.
 
 ## Local HTTP API
 

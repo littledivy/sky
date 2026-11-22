@@ -1,0 +1,61 @@
+{
+  "catalogs": {
+    "ijspeert-2024": {
+      "table": "J/A+A/691/A242/obaf-eb1",
+      "url": "https://vizier.idia.ac.za/viz-bin/asu-tsv?-source=J%2FA%2BA%2F691%2FA242%2Fobaf-eb1&-out=TIC&-out.max=unlimited",
+      "rows": 69057
+    },
+    "prsa-2022": {
+      "table": "J/ApJS/258/16/tess-ebs",
+      "url": "https://vizier.idia.ac.za/viz-bin/asu-tsv?-source=J%2FApJS%2F258%2F16%2Ftess-ebs&-out=TIC&-out.max=unlimited",
+      "rows": 4584
+    },
+    "kostov-2025-new": {
+      "table": "J/ApJS/279/50/table3",
+      "url": "https://vizier.idia.ac.za/viz-bin/asu-tsv?-source=J%2FApJS%2F279%2F50%2Ftable3&-out=TIC&-out.max=unlimited",
+      "rows": 7936
+    },
+    "kostov-2025-known": {
+      "table": "J/ApJS/279/50/table4",
+      "url": "https://vizier.idia.ac.za/viz-bin/asu-tsv?-source=J%2FApJS%2F279%2F50%2Ftable4&-out=TIC&-out.max=unlimited",
+      "rows": 2065
+    },
+    "olmschenk-2024": {
+      "table": "J/AJ/168/83",
+      "url": "https://vizier.idia.ac.za/viz-bin/asu-tsv?-source=J%2FAJ%2F168%2F83&-out=TIC&-out.max=unlimited",
+      "rows": 14156
+    }
+  },
+  "results": [
+    {
+      "report": "output/tess/88481083/discovery-scan.json",
+      "tic": 301022289,
+      "spacing_days": 2.3854375650062525,
+      "catalog_matches": []
+    },
+    {
+      "report": "output/tess/88481083/discovery-scan.json",
+      "tic": 88481081,
+      "spacing_days": 3.460420583498747,
+      "catalog_matches": []
+    },
+    {
+      "report": "output/tess/88481083/discovery-scan.json",
+      "tic": 122618066,
+      "spacing_days": 2.353924596005972,
+      "catalog_matches": []
+    },
+    {
+      "report": "output/tess/88481083/discovery-scan.json",
+      "tic": 197642926,
+      "spacing_days": 5.409627136945805,
+      "catalog_matches": []
+    }
+  ],
+  "localized_sources": [
+    {
+      "tic": 88481083,
+      "catalog_matches": []
+    }
+  ]
+}

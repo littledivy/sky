@@ -1,0 +1,13 @@
+{
+  "tic": 390471207,
+  "catalog_matches": [
+    {
+      "name": "IJspeert et al. (2024), TESS OBAF eclipsing systems",
+      "url": "https://doi.org/10.1051/0004-6361/202450507",
+      "table": "J/A+A/691/A242/obaf-eb1",
+      "result": "Published eclipsing signal at the recovered period",
+      "period_days": 5.263134454105564
+    }
+  ],
+  "conclusion": "Previously published eclipsing signal"
+}
