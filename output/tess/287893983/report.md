@@ -1,5 +1,9 @@
 # A 6.368-hour photometric signal in the HD 107126 aperture
 
+![Archival photograph of the HD 107126 field beside the measured TESS brightness cycle](hd107126-share.png)
+
+The study field comes from a Digitized Sky Survey 2 red plate taken at the Anglo-Australian Observatory in April 1991. The panel on the right shows the 6.368-hour signal in TESS sectors 99 and 100 after subtracting the other fitted periods. [Sky image](hd107126-sky.jpg) · [Original STScI plate cutout](https://archive.stsci.edu/cgi-bin/dss_search?v=poss2ukstu_red&r=184.8368337484&d=-59.2912616674&e=J2000&h=6&w=6&f=fits&c=none)
+
 The TESS light curve of TIC 287893983 contains a signal at **3.768821 cycles per day** (6.36804 hours). Its flux semi-amplitude in seven independently reduced sector light curves is 578–651 ppm. HD 107126 is the known visual double WDS J12193−5917 AB. TESS pixel fits placed the signal within 4.6 arcsec of the Gaia DR3 source 6059332375114497792 in both sectors with two-minute target-pixel data. This localizes it to the vicinity of the pair. The individual source and physical mechanism are unresolved. [SIMBAD bibliography](https://simbad.idia.ac.za/simbad/sim-id-refs?Ident=HD+107126) · [Mason et al.](https://arxiv.org/abs/0811.0492)
 
 ## Independent checks
