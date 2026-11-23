@@ -1,5 +1,9 @@
 # All-sky TESS scout: TIC 24695715
 
+![Archival DSS2 red sky field with TIC 24695715 marked, alongside the repeating TESS eclipse in sectors 95 and 96](tic-24695715-share.png)
+
+The share image pairs a Digitized Sky Survey 2 red-plate cutout with the TESS-SPOC phase-folded photometry. The archival sky image is from the AAO/ROE UK Schmidt plate observed on 1987-09-20; [download the field image](tic-24695715-sky.jpg) or view the [original DSS cutout at STScI](https://archive.stsci.edu/cgi-bin/dss_search?v=poss2ukstu_red&r=25.06210645&d=-67.81509844&e=J2000&h=6&w=6&f=fits&c=none).
+
 ## Search
 
 Sky sampled 180 targets from each of 11 widely spaced sector pairs (1/2, 11/12, 21/22, 31/32, 43/44, 53/54, 63/64, 75/76, 85/86, 95/96, 105/106): 1,980 targets total. The scans returned 43 repeaters. Many of the loudest signals were already catalogued as known eclipsing or pulsating variables.
@@ -16,7 +20,7 @@ Target-pixel difference images from sectors 95 and 96 put the variable source 4.
 
 Cross-checks found no TIC match in five published TESS eclipsing-binary tables, no VSX entry within 36 arcseconds, and no NASA Exoplanet Archive TOI entry. SIMBAD returns UCAC4 111-001466 at the position. Exact TIC, Gaia DR3, and UCAC4 web searches returned no relevant results. The SPOC TCE table fetch for sectors 95/96 timed out, so that catalog check remains open. This is an unclassified eclipse candidate; the evidence does not establish whether the companion is a planet, brown dwarf, or star.
 
-The AAVSO VSX draft and support plot are in `vsx-submission-draft.md` and `phase-and-timeseries.png`. VSX requires a logged-in account and supporting documentation for new data-mined variables. It also cautions that a personal discoverer name is not guaranteed.
+The candidate was submitted to AAVSO VSX with the provisional designation TIC 24695715 and is awaiting moderator review. The submitted support plot is `phase-and-timeseries.png`; the share graphic is `tic-24695715-share.png`. The submission requests discoverer credit as Divy, which VSX moderators may edit.
 
 ## Scale-up
 
