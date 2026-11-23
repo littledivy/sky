@@ -22,8 +22,53 @@
     "object_type": "*"
   },
   "spoc_tce": {
-    "status": "not_checked",
-    "reason": "Sector 95/96 threshold-crossing CSV downloads timed out"
+    "status": "checked",
+    "sectors": [
+      95,
+      96
+    ],
+    "tic_matches": [],
+    "source": "https://archive.stsci.edu/tess/bulk_downloads/bulk_downloads_tce.html",
+    "note": "The public single-sector TESS-SPOC TCE statistics CSVs for sectors 95 and 96 contain no row for TIC 24695715."
   },
-  "status": "No match in the checked catalogs; not a guarantee that no paper or database has reported the object."
+  "status": "No match in the checked catalogs; not a guarantee that no paper or database has reported the object.",
+  "tic_v8_2": {
+    "tic": 24695715,
+    "teff_k": 5313.0,
+    "radius_solar": 0.957062,
+    "distance_pc": 341.43,
+    "contamination_ratio": 0.00035378462,
+    "crowdsap_sectors_95_96": [
+      0.98192728,
+      0.98638886
+    ],
+    "nearest_catalogued_tic_neighbor_arcsec": 43.0,
+    "note": "TIC radius has no reported uncertainty here and differs materially from Gaia DR3 radius estimates."
+  },
+  "gaia_dr3": {
+    "source_id": "4697634881027710464",
+    "parallax_mas": 1.9081411,
+    "parallax_error_mas": 0.1024344,
+    "g_mag": 12.722732,
+    "bp_rp": 0.8697758,
+    "teff_gspphot_k": 5612.255,
+    "logg_gspphot": 3.8316,
+    "radius_flame_solar": 1.4509349,
+    "radius_flame_interval_solar": [
+      1.3757,
+      1.5310223
+    ],
+    "radius_gspphot_solar": 1.8261,
+    "radius_gspphot_interval_solar": [
+      1.7532,
+      1.9404
+    ],
+    "mass_flame_solar": 0.959794,
+    "ruwe": 8.918439,
+    "astrometric_excess_noise_mas": 1.2151023,
+    "astrometric_excess_noise_sig": 1572.7534,
+    "phot_variable_flag": "NOT_AVAILABLE",
+    "nss_two_body_orbit_match": false,
+    "nss_acceleration_match": false
+  }
 }

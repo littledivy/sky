@@ -1,0 +1,36 @@
+{
+  "tic": 24695715,
+  "observed_eclipse_spacing_days": 0.240691392,
+  "possible_binary_orbital_period_days": 0.481382784,
+  "event_depth_alternation": {
+    "TESS sectors 95/96": {
+      "paired_events": 38,
+      "mean_even_minus_odd_depth_fraction": 0.0008976805530021412,
+      "standard_error_fraction": 0.00023288720830217557,
+      "even_median_depth_fraction": 0.013547941510424844,
+      "odd_median_depth_fraction": 0.012610741355884372
+    },
+    "multi-region scout": {
+      "paired_events": 40,
+      "mean_even_minus_odd_depth_fraction": 0.0013640420403222748,
+      "standard_error_fraction": 0.00024779224716113535,
+      "even_median_depth_fraction": 0.0139642595615985,
+      "odd_median_depth_fraction": 0.012501818660120758
+    }
+  },
+  "planet_radius_naive_rjup": {
+    "using_tic_radius_0.957_rsun": 1.065,
+    "using_gaia_flame_radius_1.451_rsun": 1.615,
+    "using_gaia_gspphot_radius_1.826_rsun": 2.032
+  },
+  "semi_major_axis_rsun_if_stellar_mass_0.9598_msun": {
+    "period_0.240691_days": 1.606,
+    "period_0.481383_days": 2.549
+  },
+  "interpretation": "Alternating depths favor a possible twice-as-long eclipsing-binary orbit over a single transiting planet. Gaia single-source astrometry/stellar parameters are anomalous and the host radius is unresolved, so neither interpretation is confirmed.",
+  "catalog_status": {
+    "nasa_exoplanet_archive_toi_match": false,
+    "spoc_tce_sector_95_96_match": false,
+    "vsx_entry_pre_submission_check": false
+  }
+}

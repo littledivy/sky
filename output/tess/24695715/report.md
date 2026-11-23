@@ -12,13 +12,23 @@ This is a broad pilot, not a complete all-sky census. It covered the selected tw
 
 ## Best unlisted lead from the pilot
 
-TIC 24695715 has a repeated, single-dip signal. The fit to sectors 95 and 96 gives a period of 0.2406914 days (5.7766 hours), a duration of about 1.24 hours, and a depth of about 1.31%. Its TESS magnitude is 12.25. Even and odd cycles have similar depths, and the folded light curve shows no clear secondary dip at phase 0.5.
+TIC 24695715 has a repeated eclipse signal with successive dips spaced by 0.2406914 days (5.7766 hours). The fitted duration is about 1.24 hours and depth about 1.31%. Its TESS magnitude is 12.25. The event spacing may be half the true orbital period; see the parity check below.
 
 The signal is also present in TESS full-frame cutouts from sectors 1, 2, 29, 68, and 69. At the fitted period, phase-fitted depths are 0.88–1.08%, with BLS signal-to-noise 41.8–72.3. A linear ephemeris spanning the old cutouts and the sector 95/96 fit has 2.4-minute RMS timing residuals.
 
 Target-pixel difference images from sectors 95 and 96 put the variable source 4.2 and 2.0 arcseconds from the TIC coordinates, respectively, consistent with the target. Gaia DR3 has a nearby match 0.55 arcseconds away, with G=12.72 and BP−RP=0.87; its variability flag is unavailable.
 
-Cross-checks found no TIC match in five published TESS eclipsing-binary tables, no VSX entry within 36 arcseconds, and no NASA Exoplanet Archive TOI entry. SIMBAD returns UCAC4 111-001466 at the position. Exact TIC, Gaia DR3, and UCAC4 web searches returned no relevant results. The SPOC TCE table fetch for sectors 95/96 timed out, so that catalog check remains open. This is an unclassified eclipse candidate; the evidence does not establish whether the companion is a planet, brown dwarf, or star.
+Cross-checks found no TIC match in five published TESS eclipsing-binary tables, no VSX entry within 36 arcseconds, no NASA Exoplanet Archive TOI entry, and no public SPOC TCE row for this target in sectors 95 or 96. SIMBAD returns UCAC4 111-001466 at the position. Exact TIC, Gaia DR3, and UCAC4 web searches returned no relevant results.
+
+## Planet-versus-binary check
+
+The 5.7766-hour interval may be half the true orbital period. Comparing adjacent eclipse measurements gives deeper even-numbered events in both the sector 95/96 data and the older, widely separated TESS cutouts. The paired mean depth differences are 0.090 percentage points across 38 event pairs in sectors 95/96 and 0.136 percentage points across 40 pairs in the older cutouts. The direction repeats across the independent baselines. [Folding at twice the interval](period-alias-check.png) shows the two alternating eclipses near phases 0 and 0.5. This pattern makes an eclipsing binary a stronger explanation than a planet transiting every 5.7766 hours, although the physical interpretation is not confirmed.
+
+The host-star size is not settled. TIC v8.2 gives a radius of 0.96 solar radii, while Gaia DR3 gives 1.45 solar radii from FLAME and 1.83 solar radii from GSP-Phot. Gaia also reports RUWE 8.92 and astrometric excess noise 1.22 mas, so its single-source astrometric/stellar solution is anomalous. At the measured 1.31% depth, a simple undiluted transit estimate would imply about 1.1 Jupiter radii using the TIC radius, but 1.6–2.0 Jupiter radii using Gaia's radii. These are rough estimates, and the input-radius disagreement plus alternating depths prevents a reliable planet-radius claim.
+
+The TIC contamination ratio is 0.00035 and SPOC crowding metrics are 0.982 and 0.986 for sectors 95 and 96. The nearest TIC catalog neighbor is 43 arcseconds away and much fainter, which argues against a bright, wide contaminant. It does not rule out an unresolved close companion. The Gaia DR3 source has no Gaia variability classification or NSS two-body/acceleration solution. Searches found no NASA Exoplanet Archive TOI match and no public SPOC TCE row in sectors 95 or 96.
+
+The submitted VSX entry used the 5.7766-hour eclipse spacing as its period. This new parity check raises a possible 11.553-hour orbital period; a physical binary/transit fit and an amendment to the pending submission should be considered before claiming a planet. Full details and calculations are in [exoplanet-assessment.md](exoplanet-assessment.md) and [exoplanet-assessment.json](exoplanet-assessment.json).
 
 The candidate was submitted to AAVSO VSX with the provisional designation TIC 24695715 and is awaiting moderator review. The submitted support plot is `phase-and-timeseries.png`; the share graphic is `tic-24695715-share.png`. The submission requests discoverer credit as Divy, which VSX moderators may edit.
 
