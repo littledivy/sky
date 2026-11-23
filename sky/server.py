@@ -4,7 +4,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
 from .api import RunContext, archive_call, cone, orbital_decay, survey_names
-from .archives import SURVEYS, gaia_epoch_photometry
+from .archives import SURVEYS, gaia_epoch_photometry, jwst_products
 
 
 class RunRequest(BaseModel):
@@ -24,7 +24,7 @@ def create_app(partitions=(), *, workers=1):
     def cone_search(ra: float, dec: float, radius_arcsec: float = 60, limit: int = 20,
                     surveys: str = "gaia,roman", roman_program: str = "gbtds"):
         try:
-            names = survey_names(surveys, ("gaia", "roman", "roman-sim"))
+            names = survey_names(surveys, ("gaia", "jwst", "roman", "roman-sim"))
             return cone(ra, dec, radius_arcsec=radius_arcsec, limit=limit,
                         surveys=names, program=roman_program)
         except ValueError as error:
@@ -33,6 +33,10 @@ def create_app(partitions=(), *, workers=1):
     @app.get("/v1/gaia/{source_id}/photometry")
     def gaia_photometry(source_id: str):
         return archive_call("gaia", gaia_epoch_photometry, source_id)
+
+    @app.get("/v1/jwst/{obsid}/products")
+    def jwst_product_list(obsid: str, download: bool = False, directory: str = "data/jwst"):
+        return archive_call("jwst", jwst_products, obsid, download=download, directory=directory)
 
     @app.post("/v1/experiments/orbital-decay")
     def run_experiment(request: RunRequest):

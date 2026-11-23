@@ -7,7 +7,7 @@ from pathlib import Path
 import sys
 
 from .api import RunContext, archive_call, cone, local_partitions, orbital_decay, survey_names
-from .archives import SURVEYS, fetch_ztf, gaia_epoch_photometry
+from .archives import SURVEYS, fetch_ztf, gaia_epoch_photometry, jwst_products
 
 
 def trusted_experiment(name):
@@ -43,6 +43,11 @@ def main():
 
     gaia = commands.add_parser("gaia-photometry", help="Retrieve Gaia DR3 epoch photometry")
     gaia.add_argument("source_id")
+
+    jwst = commands.add_parser("jwst-products", help="List public calibrated JWST products for a MAST obsid")
+    jwst.add_argument("obsid")
+    jwst.add_argument("--download", action="store_true", help="Download the listed calibrated FITS products")
+    jwst.add_argument("--directory", type=Path, default=Path("data/jwst"))
 
     download = commands.add_parser("fetch-ztf", help="Download one official ZTF DR24 Parquet file")
     download.add_argument("field", type=int)
@@ -98,10 +103,13 @@ def main():
                 output = SURVEYS
             case "cone":
                 output = cone(args.ra, args.dec, radius_arcsec=args.radius_arcsec, limit=args.limit,
-                              surveys=survey_names(args.surveys, ("gaia", "roman", "roman-sim")),
+                              surveys=survey_names(args.surveys, ("gaia", "jwst", "roman", "roman-sim")),
                               program=args.roman_program)
             case "gaia-photometry":
                 output = archive_call("gaia", gaia_epoch_photometry, args.source_id)
+            case "jwst-products":
+                output = archive_call("jwst", jwst_products, args.obsid,
+                                      download=args.download, directory=args.directory)
             case "fetch-ztf":
                 output = fetch_ztf(args.field, args.ccd, args.quadrant, args.band, args.directory)
             case "run":

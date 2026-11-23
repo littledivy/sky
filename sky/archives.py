@@ -21,13 +21,14 @@ from pyarrow.parquet import ParquetFile
 
 GAIA_TAP = "https://gea.esac.esa.int/tap-server/tap/sync"
 GAIA_DATA = "https://gaia.aip.de/tap/sync"
-ROMAN_MAST = "https://mast.stsci.edu/api/v0/invoke"
+MAST_API = "https://mast.stsci.edu/api/v0/invoke"
 ROMAN_SIMULATIONS = "https://raw.githubusercontent.com/spacetelescope/roman_notebooks/b940b033f0474b28b9fe63973d72ce01d903683d/notebooks/ccs_simulations"
 ZTF_BULK = "https://irsa.ipac.caltech.edu/data/ZTF/lc/lc_dr24"
 SURVEYS = {
     "ztf": {"release": "DR24", "source": ZTF_BULK, "products": ["local light curves"]},
     "gaia": {"release": "DR3", "source": GAIA_TAP, "products": ["source catalog", "epoch photometry"]},
-    "roman": {"source": ROMAN_MAST, "products": ["WFI dataset metadata", "local extracted photometry"]},
+    "jwst": {"source": MAST_API, "products": ["public observation metadata", "calibrated FITS products"]},
+    "roman": {"source": MAST_API, "products": ["WFI dataset metadata", "local extracted photometry"]},
     "roman-sim": {"source": ROMAN_SIMULATIONS, "products": ["simulated WFI exposure metadata"]},
 }
 
@@ -148,8 +149,79 @@ def roman_observations(ra, dec, radius_arcsec=60, limit=20):
             else:
                 values[name] = str(value)
         rows.append(values)
-    return result(rows, ROMAN_MAST, limit, product="wfi_observation_metadata",
+    return result(rows, MAST_API, limit, product="wfi_observation_metadata",
                   archive_collection="ROMAN", search_geometry="MAST footprint intersection")
+
+
+def jwst_observations(ra, dec, radius_arcsec=60, limit=20):
+    """Find public JWST science observations intersecting a sky position."""
+    from astroquery.mast import Observations
+
+    validate_region(ra, dec, radius_arcsec, limit)
+    table = Observations.query_criteria(
+        coordinates=SkyCoord(ra, dec, unit="deg"), radius=radius_arcsec * u.arcsec,
+        obs_collection="JWST", intentType="science", dataRights="PUBLIC",
+        pagesize=limit + 1, page=1,
+    )
+    rows = []
+    for row in table:
+        values = {}
+        for name in table.colnames:
+            value = row[name]
+            if np.ma.is_masked(value):
+                values[name] = None
+            elif isinstance(value, (float, np.floating)) and not np.isfinite(value):
+                values[name] = None
+            elif isinstance(value, np.generic):
+                values[name] = value.item()
+            elif isinstance(value, (bool, float, int, str)) or value is None:
+                values[name] = value
+            else:
+                values[name] = str(value)
+        rows.append(values)
+    rows.sort(key=lambda value: value.get("distance") if value.get("distance") is not None else float("inf"))
+    return result(rows, MAST_API, limit, product="jwst_observation_metadata",
+                  archive_collection="JWST", search_geometry="MAST footprint intersection")
+
+
+def jwst_products(obsid, *, download=False, directory="data/jwst"):
+    """List public calibrated JWST FITS science products for one MAST obsid."""
+    from astroquery.mast import Observations
+
+    try:
+        obsid = int(obsid)
+    except (TypeError, ValueError) as error:
+        raise ValueError("Expected a numeric MAST obsid from sky cone --surveys jwst.") from error
+    if obsid <= 0:
+        raise ValueError("Expected a positive MAST obsid.")
+    products = Observations.get_product_list(str(obsid))
+    products = Observations.filter_products(
+        products, extension="fits", calib_level=[2, 3], productType="SCIENCE",
+    )
+    rows = []
+    for row in products:
+        rows.append({
+            "obsid": int(row["obsID"]),
+            "dataURI": str(row["dataURI"]),
+            "productFilename": str(row["productFilename"]),
+            "productSubGroupDescription": str(row["productSubGroupDescription"]),
+            "calib_level": int(row["calib_level"]),
+            "size": int(row["size"]),
+            "filters": str(row["filters"]),
+            "instrument_name": str(row["instrument_name"]),
+        })
+    manifest = None
+    if download and len(products):
+        manifest_table = Observations.download_products(products, download_dir=str(directory))
+        manifest = [
+            {name: (None if np.ma.is_masked(row[name]) else str(row[name]))
+             for name in manifest_table.colnames}
+            for row in manifest_table
+        ]
+    return {"status": "ok" if rows else "empty", "source": MAST_API,
+            "rows": rows, "truncated": False, "product": "calibrated_jwst_fits",
+            "obsid": obsid, "downloaded": bool(download), "download_directory": str(directory),
+            "manifest": manifest}
 
 
 @lru_cache(maxsize=2)

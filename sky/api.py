@@ -14,7 +14,7 @@ from ztf.short_period_eclipses import Search, scan_partition
 
 from .archives import (
     SURVEYS, gaia_epoch_photometry, gaia_sources, roman_observations,
-    roman_simulations, validate_region,
+    jwst_observations, roman_simulations, validate_region,
 )
 
 
@@ -25,19 +25,19 @@ def survey_names(value, allowed=SURVEYS):
     return names
 
 
-def archive_call(name, operation, *args):
+def archive_call(name, operation, *args, **kwargs):
     try:
-        return operation(*args)
+        return operation(*args, **kwargs)
     except Exception as error:
         return {"status": "error", "source": SURVEYS[name]["source"], "error": str(error), "rows": []}
 
 
 def cone(ra, dec, *, radius_arcsec=60, limit=20, surveys=("gaia", "roman"), program="gbtds"):
     validate_region(ra, dec, radius_arcsec, limit)
-    operations = {"gaia": gaia_sources, "roman": roman_observations,
+    operations = {"gaia": gaia_sources, "jwst": jwst_observations, "roman": roman_observations,
                   "roman-sim": roman_simulations}
     if not surveys or any(name not in operations for name in surveys):
-        raise ValueError("Cone searches support gaia, roman and roman-sim.")
+        raise ValueError("Cone searches support gaia, jwst, roman and roman-sim.")
     with ThreadPoolExecutor(max_workers=len(surveys)) as pool:
         pending = {
             name: pool.submit(archive_call, name, operations[name], ra, dec, radius_arcsec, limit,

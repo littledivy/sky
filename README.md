@@ -1,6 +1,6 @@
 # Sky
 
-Run astronomy experiments across ZTF, Gaia, Roman, and TESS. Sky provides a local CLI, a Python experiment interface, and a local HTTP API.
+Run astronomy experiments across ZTF, Gaia, JWST, Roman, and TESS. Sky provides a local CLI, a Python experiment interface, and a local HTTP API.
 
 The [ZTF experiments](ztf/README.md) include the J1539 orbital-decay reproduction and a pilot search for eclipses around fast-moving stars. [Saved reports](output/ztf/) include ranked candidates, survey coverage, and timing fits.
 
@@ -21,6 +21,21 @@ sky cone 234.88396 50.4608 --radius-arcsec 2 --surveys gaia,roman
 sky gaia-photometry 246756973652292992
 sky run orbital-decay --ztf data/ztf --surveys ztf,gaia,roman --top 20 > run.json
 ```
+
+Search MAST for public JWST observations at a sky position, then list calibrated
+FITS products for one returned numeric `obsid` before choosing whether to
+download them:
+
+```sh
+sky cone 189.2 62.2 --radius-arcsec 30 --surveys jwst --limit 50
+sky jwst-products 123456789 --directory data/jwst
+sky jwst-products 123456789 --download --directory data/jwst
+```
+
+The JWST adapter queries public science observations and reports product
+provenance. It does not yet perform source detection or photometric extraction
+from JWST images. For a discovery workflow focused on distant compact red
+sources, see [JWST discovery notes](experiments/jwst/README.md).
 
 For a smoke test, pass `--limit-per-partition 8 --top 1`. Omit the limit to
 scan every eligible curve in the supplied files. After the ZTF scan, the
