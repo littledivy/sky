@@ -104,6 +104,13 @@ also matched a previously published eclipsing signal.
 The [HD 107126 analysis](output/tess/287893983/report.md) documents a 6.368-hour
 photometric signal across seven years of TESS data and the checks for prior reports.
 
+## Gaia DR4 readiness
+
+Sky's Gaia archive adapter currently uses DR3. The [DR4 discovery readiness
+notes](experiments/gaia/DR4-READINESS.md) describe the first-pass search priorities
+and the TAP schema probe to run when DR4 tables are available. This avoids
+assuming unreleased table names or data formats.
+
 ## Local HTTP API
 
 ```sh
