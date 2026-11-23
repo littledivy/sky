@@ -1,0 +1,29 @@
+{
+  "tic": 24695715,
+  "vsx_api": {
+    "query_radius_arcsec": 36,
+    "exact_match": false,
+    "source": "https://vsx.aavso.org/index.php?view=api.list"
+  },
+  "published_tess_eclipsing_binary_tables": {
+    "checked": 5,
+    "matches": []
+  },
+  "nasa_exoplanet_archive_toi": {
+    "query": "toi table where tid=24695715",
+    "rows": 0
+  },
+  "exact_web_search": {
+    "tic_search_results_relevant": 0,
+    "gaia_source_search_results_relevant": 0
+  },
+  "simbad": {
+    "nearby_identifier": "UCAC4 111-001466",
+    "object_type": "*"
+  },
+  "spoc_tce": {
+    "status": "not_checked",
+    "reason": "Sector 95/96 threshold-crossing CSV downloads timed out"
+  },
+  "status": "No match in the checked catalogs; not a guarantee that no paper or database has reported the object."
+}
